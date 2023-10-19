@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://dl4fow6qbm44s"]
+
+[ext_resource type="Texture2D" uid="uid://dgy8c0nh62smm" path="res://Textures/terra_teste.png" id="1_n17s4"]
+[ext_resource type="PackedScene" uid="uid://bhakehydpe6h3" path="res://Player/maguinho_bolado.tscn" id="2_hv76x"]
+[ext_resource type="PackedScene" uid="uid://er0xygu5whd1" path="res://Enemy/enemy.tscn" id="3_074l2"]
+[ext_resource type="PackedScene" uid="uid://pljhs3wrimv3" path="res://Tower/torre.tscn" id="4_7f3wk"]
+
+[node name="World" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(1978, 779)
+scale = Vector2(5.7766, 4.5)
+texture = ExtResource("1_n17s4")
+region_enabled = true
+region_rect = Rect2(-4000, -4000, 4000, 4000)
+
+[node name="MaguinhoBolado" parent="." instance=ExtResource("2_hv76x")]
+position = Vector2(62, 39)
+
+[node name="Enemy" parent="." instance=ExtResource("3_074l2")]
+position = Vector2(330, 14)
+
+[node name="torre" parent="." instance=ExtResource("4_7f3wk")]
+position = Vector2(-41, -183)
+collision_layer = 2147483648
+collision_mask = 2147483648
+collision_priority = 32.0

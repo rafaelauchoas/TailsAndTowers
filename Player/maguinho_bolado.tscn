@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://bhakehydpe6h3"]
+
+[ext_resource type="Script" path="res://Player/maguinho_bolado.gd" id="1_05ckr"]
+[ext_resource type="Texture2D" uid="uid://pfn5w64tk3a" path="res://Textures/Player/sprite sheet.png" id="2_0ko1l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v5tg"]
+atlas = ExtResource("2_0ko1l")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rrbft"]
+atlas = ExtResource("2_0ko1l")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqpl5"]
+atlas = ExtResource("2_0ko1l")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4mik4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v5tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rrbft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v5tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqpl5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g0ujo"]
+radius = 7.0
+height = 24.0
+
+[node name="MaguinhoBolado" type="CharacterBody2D" groups=["player"]]
+motion_mode = 1
+script = ExtResource("1_05ckr")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+sprite_frames = SubResource("SpriteFrames_4mik4")
+animation = &"walk"
+autoplay = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("CapsuleShape2D_g0ujo")
