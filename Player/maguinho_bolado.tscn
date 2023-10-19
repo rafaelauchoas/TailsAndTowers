@@ -3,10 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://c12kl61xdcx67" path="res://Textures/Player/player_sprite.png" id="1_3h3yd"]
 [ext_resource type="Script" path="res://Player/maguinho_bolado.gd" id="1_05ckr"]
 
-[node name="MaguinhoBolado" type="CharacterBody2D"]
+[node name="MaguinhoBolado" type="CharacterBody2D" groups=["player"]]
+motion_mode = 1
 script = ExtResource("1_05ckr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -2)
 texture = ExtResource("1_3h3yd")
 hframes = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]

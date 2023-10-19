@@ -1,3 +1,5 @@
 res://World/world.tscn
 res://Player/maguinho_bolado.tscn
 res://Player/maguinho_bolado.gd
+res://Enemy/enemy.tscn
+res://Enemy/enemy.gd
