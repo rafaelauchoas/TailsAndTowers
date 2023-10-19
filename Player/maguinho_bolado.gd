@@ -3,7 +3,7 @@ extends CharacterBody2D
 var movement_speed = 100.0
 
 func _physics_process(delta): # physics frame
-	movement() 
+	movement()
 
 
 func movement():
