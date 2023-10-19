@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://pljhs3wrimv3"]
+
+[ext_resource type="Texture2D" uid="uid://crbxfsmjf4o85" path="res://Textures/Tower/torre-Sheet.png" id="1_0cw5w"]
+
+[node name="torre" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(264, 271)
+texture = ExtResource("1_0cw5w")

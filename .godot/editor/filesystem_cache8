@@ -1,16 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697697468
+::res://::1697701777
 icon.svg::CompressedTexture2D::6499975186631592497::1697696007::1697696198::1::::<><>::
 README.md::TextFile::-1::1697696007::0::1::::<><>::
 ::res://Audio/::1697696227
-::res://Player/::1697697357
-maguinho_bolado.tscn::PackedScene::2878357307157913590::1697697357::0::1::::<><>::uid://c12kl61xdcx67::::res://Textures/Player/player_sprite.png
-::res://Textures/::1697697236
+::res://Enemy/::1697702946
+enemy.tscn::PackedScene::317410065229021356::1697702946::0::1::::<><>::uid://bwukgbekejoga::::res://Textures/Enemy/kolbold_weak.png<>res://Enemy/enemy.gd
+enemy.gd::GDScript::-1::1697699320::0::1::::<>CharacterBody2D<>::
+::res://Player/::1697702946
+maguinho_bolado.tscn::PackedScene::2878357307157913590::1697702946::0::1::::<><>::res://Player/maguinho_bolado.gd<>uid://pfn5w64tk3a::::res://Textures/Player/sprite sheet.png
+maguinho_bolado.gd::GDScript::-1::1697698074::0::1::::<>CharacterBody2D<>::
+::res://Textures/::1697701605
+README.md::TextFile::-1::1697698183::0::1::::<><>::
 terra_teste.png::CompressedTexture2D::7631948744880803028::1697696405::1697696414::1::::<><>::
-::res://Textures/Enemy/::1697697240
+::res://Textures/Enemy/::1697704110
 cyclops.png::CompressedTexture2D::8225474965961001807::1697697236::1697697240::1::::<><>::
 explosion_pixelfied.png::CompressedTexture2D::3493453591034427695::1697697236::1697697240::1::::<><>::
 giant_amoeba_new.png::CompressedTexture2D::5190503200470167348::1697697236::1697697240::1::::<><>::
+Inimito1.png::CompressedTexture2D::4288956378541368680::1697704090::1697704126::1::::<><>::
 juggernaut.png::CompressedTexture2D::6197335957695022408::1697697236::1697697240::1::::<><>::
 kolbold_strong.png::CompressedTexture2D::6946177193432800102::1697697236::1697697240::1::::<><>::
 kolbold_weak.png::CompressedTexture2D::3972480742664740556::1697697236::1697697240::1::::<><>::
@@ -39,7 +45,12 @@ javelin_3_new.png::CompressedTexture2D::7885100403548461753::1697697236::1697697
 javelin_3_new_attack.png::CompressedTexture2D::2209692950768082139::1697697236::1697697240::1::::<><>::
 sword.png::CompressedTexture2D::8394114015215987530::1697697236::1697697240::1::::<><>::
 tornado.png::CompressedTexture2D::5186884567926622443::1697697236::1697697240::1::::<><>::
-::res://Textures/Player/::1697697240
+::res://Textures/Player/::1697701612
 player_sprite.png::CompressedTexture2D::6654117984433175866::1697697236::1697697240::1::::<><>::
-::res://World/::1697697435
-world.tscn::PackedScene::7991536076175343120::1697697435::0::1::::<><>::uid://dgy8c0nh62smm::::res://Textures/terra_teste.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn
+sprite sheet.png::CompressedTexture2D::31294077729705256::1697701478::1697701612::1::::<><>::
+::res://Textures/Tower/::1697701612
+torre-Sheet.png::CompressedTexture2D::5969522471164678800::1697701472::1697701612::1::::<><>::
+::res://Tower/::1697702946
+torre.tscn::PackedScene::1076100753054828070::1697702946::0::1::::<><>::uid://crbxfsmjf4o85::::res://Textures/Tower/torre-Sheet.png
+::res://World/::1697702946
+world.tscn::PackedScene::7991536076175343120::1697702946::0::1::::<><>::uid://dgy8c0nh62smm::::res://Textures/terra_teste.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn<>uid://er0xygu5whd1::::res://Enemy/enemy.tscn<>uid://pljhs3wrimv3::::res://Tower/torre.tscn
