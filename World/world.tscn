@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl4fow6qbm44s"]
+
+[ext_resource type="Texture2D" uid="uid://dgy8c0nh62smm" path="res://Textures/terra_teste.png" id="1_n17s4"]
+[ext_resource type="PackedScene" uid="uid://bhakehydpe6h3" path="res://Player/maguinho_bolado.tscn" id="2_hv76x"]
+
+[node name="World" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(1958, 774)
+scale = Vector2(5.7766, 4.5)
+texture = ExtResource("1_n17s4")
+region_enabled = true
+region_rect = Rect2(-4000, -4000, 4000, 4000)
+
+[node name="MaguinhoBolado" parent="." instance=ExtResource("2_hv76x")]
+position = Vector2(9, 14)
