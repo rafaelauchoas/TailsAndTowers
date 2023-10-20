@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://wofrb3rnuw3q" path="res://Utility/hurt_box.tscn" id="2_17qry"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cjmhw"]
-size = Vector2(37, 52)
+size = Vector2(65, 92)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_if75o"]
 radius = 24.0
@@ -12,6 +12,8 @@ height = 48.0
 
 [node name="torre" type="StaticBody2D"]
 position = Vector2(128, 32)
+collision_layer = 17
+collision_mask = 17
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1, -7)
@@ -26,16 +28,14 @@ polygon = PackedVector2Array(240, 259, 246, 267, 245, 318, 282, 318, 282, 268, 2
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 
 [node name="HurtBox" parent="." instance=ExtResource("2_17qry")]
-visible = false
-collision_layer = 8
-collision_mask = 8
+collision_layer = 24
+collision_mask = 24
 
 [node name="CollisionShape2D" parent="HurtBox" index="0"]
-position = Vector2(1.5, 15)
+position = Vector2(-0.5, 10)
 shape = SubResource("RectangleShape2D_cjmhw")
 
 [node name="HurtBox2" parent="." instance=ExtResource("2_17qry")]
-visible = false
 collision_layer = 8
 collision_mask = 8
 

@@ -9,8 +9,6 @@ var time = 0
 @onready var healthBar = get_node("%HealthBar")
 @onready var timer = get_node("%Timer")
 
-
-
 # ATTACKS
 
 var fireball = preload("res://Player/Attack/fire_ball.tscn")
@@ -33,7 +31,6 @@ var additional_attacks = 0
 
 @onready var sprite = $Sprite2D
 @onready var walkTimer = get_node("%walkTimer")
-
 
 func _ready():
 	attack()
@@ -93,19 +90,7 @@ func death():
 #	deathPanel.visible = true
 	emit_signal("playerdeath")
 	get_tree().paused = true
-#	var tween = deathPanel.create_tween()
-#	tween.tween_property(deathPanel,"position",Vector2(220,50),3.0).set_trans(Tween.TRANS_QUINT).set_ease(Tween.EASE_OUT)
-#	tween.play()
-	if time >= 300:
-		pass
-		### VENCEU
-#		lblResult.text = "You Win"
-#		sndVictory.play()
-	else:
-		pass
-		### PERDEU
-#		lblResult.text = "You Lose"
-#		sndLose.play()
+	get_tree().change_scene_to_file("res://World/derrota.tscn")
 
 func change_time(argtime = 0):
 	time = argtime
@@ -116,6 +101,8 @@ func change_time(argtime = 0):
 	if get_s < 10:
 		get_s = str(0,get_s)
 	timer.text = str(get_m,":",get_s)
+	if time >= 300:
+		get_tree().change_scene_to_file("res://World/vitoria.tscn")
 
 
 func _on_fire_ball_timer_timeout():

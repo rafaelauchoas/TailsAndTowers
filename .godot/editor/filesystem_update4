@@ -10,3 +10,6 @@ res://Utility/enemy_spawner.tscn
 res://Tower/torre.tscn
 res://World/world.tscn
 res://World/tutorial.tscn
+res://Tower/torre.gd
+res://Enemy/inimigoTorre.gd
+res://Enemy/inimigoPlayer.gd
