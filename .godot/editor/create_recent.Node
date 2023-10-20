@@ -1,7 +1,8 @@
 TextureButton
-Button
 VBoxContainer
 MarginContainer
+TextureRect
+Button
 Node
 CollisionPolygon2D
 CollisionShape2D
