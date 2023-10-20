@@ -11,7 +11,3 @@ func _on_créditos_pressed():
 
 func _on_sair_pressed():
 	get_tree().quit()
-
-
-
-
