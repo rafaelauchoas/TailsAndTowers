@@ -1,0 +1,55 @@
+[gd_scene load_steps=10 format=3 uid="uid://xetjp40re16f"]
+
+[ext_resource type="Script" path="res://Utility/enemy_spawner.gd" id="1_a3jyo"]
+[ext_resource type="PackedScene" uid="uid://coyafdlhoj3vm" path="res://Enemy/inimigo_player.tscn" id="2_3aft3"]
+[ext_resource type="Script" path="res://Utility/spawn_info.gd" id="3_w6el0"]
+[ext_resource type="PackedScene" uid="uid://bpxuxey6ivy1" path="res://Enemy/inimigo_torre.tscn" id="4_i3yai"]
+
+[sub_resource type="Resource" id="Resource_ygpdb"]
+script = ExtResource("3_w6el0")
+time_start = 0
+time_end = 15
+enemy = ExtResource("2_3aft3")
+enemy_num = 1
+enemy_spawn_delay = 3
+
+[sub_resource type="Resource" id="Resource_1drjg"]
+script = ExtResource("3_w6el0")
+time_start = 15
+time_end = 30
+enemy = ExtResource("2_3aft3")
+enemy_num = 2
+enemy_spawn_delay = 3
+
+[sub_resource type="Resource" id="Resource_1etqf"]
+script = ExtResource("3_w6el0")
+time_start = 30
+time_end = 120
+enemy = ExtResource("2_3aft3")
+enemy_num = 3
+enemy_spawn_delay = 2
+
+[sub_resource type="Resource" id="Resource_1mm6s"]
+script = ExtResource("3_w6el0")
+time_start = 120
+time_end = 290
+enemy = ExtResource("2_3aft3")
+enemy_num = 2
+enemy_spawn_delay = 1
+
+[sub_resource type="Resource" id="Resource_d2ldj"]
+script = ExtResource("3_w6el0")
+time_start = 0
+time_end = 290
+enemy = ExtResource("4_i3yai")
+enemy_num = 2
+enemy_spawn_delay = 5
+
+[node name="Enemy Spawner" type="Node2D"]
+script = ExtResource("1_a3jyo")
+spawns = Array[ExtResource("3_w6el0")]([SubResource("Resource_ygpdb"), SubResource("Resource_1drjg"), SubResource("Resource_1etqf"), SubResource("Resource_1mm6s"), SubResource("Resource_d2ldj")])
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

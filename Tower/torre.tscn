@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://pljhs3wrimv3"]
+[gd_scene load_steps=5 format=3 uid="uid://pljhs3wrimv3"]
 
 [ext_resource type="Texture2D" uid="uid://bf1g10hkoikvv" path="res://Textures/Tower/TORRE ROXA DANO.png" id="1_dqsvw"]
+[ext_resource type="PackedScene" uid="uid://wofrb3rnuw3q" path="res://Utility/hurt_box.tscn" id="2_17qry"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cjmhw"]
+size = Vector2(37, 52)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_if75o"]
+radius = 24.0
+height = 48.0
 
 [node name="torre" type="StaticBody2D"]
+position = Vector2(128, 32)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1, -7)
@@ -10,7 +19,29 @@ texture = ExtResource("1_dqsvw")
 hframes = 3
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
 position = Vector2(-263, -278)
 polygon = PackedVector2Array(240, 259, 246, 267, 245, 318, 282, 318, 282, 268, 287, 260, 288, 246, 265, 224, 261, 224, 240, 245)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="HurtBox" parent="." instance=ExtResource("2_17qry")]
+visible = false
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" parent="HurtBox" index="0"]
+position = Vector2(1.5, 15)
+shape = SubResource("RectangleShape2D_cjmhw")
+
+[node name="HurtBox2" parent="." instance=ExtResource("2_17qry")]
+visible = false
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" parent="HurtBox2" index="0"]
+position = Vector2(0, -32)
+shape = SubResource("CapsuleShape2D_if75o")
+
+[editable path="HurtBox"]
+[editable path="HurtBox2"]
