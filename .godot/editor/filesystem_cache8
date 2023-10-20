@@ -1,71 +1,80 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697776722
-icon.svg::CompressedTexture2D::6499975186631592497::1697696007::1697696198::1::::<><>::
-README.md::TextFile::-1::1697696007::0::1::::<><>::
-::res://Audio/::1697696227
-::res://Enemy/::1697763454
-Animacao-morte.png::CompressedTexture2D::5461769419246006147::1697763454::1697763454::1::::<><>::
-enemy.gd::GDScript::-1::1697763454::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::317410065229021356::1697763454::0::1::::<><>::res://Enemy/enemy.gd<>uid://b2duqqtxxtt1a::::res://Textures/Enemy/Inimito1.png
-Inimigo2.png::CompressedTexture2D::4878588542210960039::1697763454::1697763454::1::::<><>::
-Inimito1.png::CompressedTexture2D::8121221880177262718::1697763454::1697763454::1::::<><>::
-::res://Player/::1697763454
-maguinho_bolado.gd::GDScript::-1::1697763454::0::1::::<>CharacterBody2D<>::
-maguinho_bolado.tscn::PackedScene::2878357307157913590::1697763454::0::1::::<><>::res://Player/maguinho_bolado.gd<>uid://pfn5w64tk3a::::res://Textures/Player/sprite sheet.png
-::res://Textures/::1697763454
-chao1.png::CompressedTexture2D::6316288921584237494::1697763454::1697763454::1::::<><>::
-chao2.png::CompressedTexture2D::4650940222233290958::1697763454::1697763454::1::::<><>::
-README.md::TextFile::-1::1697698183::0::1::::<><>::
-terra_teste.png::CompressedTexture2D::7631948744880803028::1697696405::1697696414::1::::<><>::
-::res://Textures/Enemy/::1697763454
-Animacao-morte.png::CompressedTexture2D::7008470243999657442::1697763454::1697763454::1::::<><>::
-cyclops.png::CompressedTexture2D::8225474965961001807::1697697236::1697697240::1::::<><>::
-explosion_pixelfied.png::CompressedTexture2D::3493453591034427695::1697697236::1697697240::1::::<><>::
-giant_amoeba_new.png::CompressedTexture2D::5190503200470167348::1697697236::1697697240::1::::<><>::
-Inimigo2.png::CompressedTexture2D::909978409216045781::1697763454::1697763454::1::::<><>::
-Inimito1.png::CompressedTexture2D::4288956378541368680::1697763454::1697763454::1::::<><>::
-juggernaut.png::CompressedTexture2D::6197335957695022408::1697697236::1697697240::1::::<><>::
-kolbold_strong.png::CompressedTexture2D::6946177193432800102::1697697236::1697697240::1::::<><>::
-kolbold_weak.png::CompressedTexture2D::3972480742664740556::1697697236::1697697240::1::::<><>::
-::res://Textures/GUI/::1697697240
-EmptyItem.png::CompressedTexture2D::6422610495354167122::1697697236::1697697240::1::::<><>::
-exp_background.png::CompressedTexture2D::3030463007612864153::1697697236::1697697240::1::::<><>::
-exp_progress.png::CompressedTexture2D::3885101297883774550::1697697236::1697697240::1::::<><>::
-health.png::CompressedTexture2D::1431267063009283684::1697697236::1697697240::1::::<><>::
-healthbar.png::CompressedTexture2D::7033872399249152096::1697697236::1697697240::1::::<><>::
-::res://Textures/Items/::1697697236
-::res://Textures/Items/Gems/::1697697240
-Gem_blue.png::CompressedTexture2D::3068507983257563959::1697697236::1697697240::1::::<><>::
-Gem_green.png::CompressedTexture2D::2237292678972069894::1697697236::1697697240::1::::<><>::
-Gem_red.png::CompressedTexture2D::3650484801496245068::1697697236::1697697240::1::::<><>::
-::res://Textures/Items/Upgrades/::1697697240
-boots_4_green.png::CompressedTexture2D::2203060614134534242::1697697236::1697697240::1::::<><>::
-chunk.png::CompressedTexture2D::641916415028898894::1697697236::1697697240::1::::<><>::
-helmet_1.png::CompressedTexture2D::5725345667554770507::1697697236::1697697240::1::::<><>::
-low_boots.png::CompressedTexture2D::3371602103768707352::1697697236::1697697240::1::::<><>::
-scroll_old.png::CompressedTexture2D::981762566698526153::1697697236::1697697240::1::::<><>::
-thick_new.png::CompressedTexture2D::1524623566491880872::1697697236::1697697240::1::::<><>::
-urand_mage.png::CompressedTexture2D::7915765386256823902::1697697236::1697697240::1::::<><>::
-::res://Textures/Items/Weapons/::1697697240
-ice_spear.png::CompressedTexture2D::9155081319355910860::1697697236::1697697240::1::::<><>::
-javelin_3_new.png::CompressedTexture2D::7885100403548461753::1697697236::1697697240::1::::<><>::
-javelin_3_new_attack.png::CompressedTexture2D::2209692950768082139::1697697236::1697697240::1::::<><>::
-sword.png::CompressedTexture2D::8394114015215987530::1697697236::1697697240::1::::<><>::
-tornado.png::CompressedTexture2D::5186884567926622443::1697697236::1697697240::1::::<><>::
-::res://Textures/Player/::1697763454
-ataque.png::CompressedTexture2D::3837754883137074337::1697763454::1697763454::1::::<><>::
-player_sprite.png::CompressedTexture2D::6654117984433175866::1697697236::1697697240::1::::<><>::
-sprite sheet.png::CompressedTexture2D::31294077729705256::1697763454::1697763454::1::::<><>::
-::res://Textures/Tower/::1697763454
-TORRE AZUL ATKSPD.png::CompressedTexture2D::314308634821512529::1697763454::1697763454::1::::<><>::
-TORRE LARANJA QTD.png::CompressedTexture2D::142038836801475510::1697763454::1697763454::1::::<><>::
-TORRE ROSA HP.png::CompressedTexture2D::2997691318821764002::1697763454::1697763454::1::::<><>::
-TORRE ROXA DANO.png::CompressedTexture2D::2791450780457717415::1697763454::1697763454::1::::<><>::
-TORRE VERDE MOVSPD.png::CompressedTexture2D::4655263371672715696::1697763454::1697763454::1::::<><>::
-torre-Sheet.png::CompressedTexture2D::5969522471164678800::1697763454::1697763454::1::::<><>::
-::res://Tower/::1697763454
-torre.tscn::PackedScene::1076100753054828070::1697763454::0::1::::<><>::uid://bf1g10hkoikvv::::res://Textures/Tower/TORRE ROXA DANO.png
-::res://World/::1697763454
-Inimigo1.gd::GDScript::-1::1697763454::0::1::::<>CharacterBody2D<>::
-Inimigo2.gd::GDScript::-1::1697763454::0::1::::<>CharacterBody2D<>::
-world.tscn::PackedScene::7991536076175343120::1697763454::0::1::::<><>::uid://cv8wmdhduydte::::res://Textures/chao1.png<>uid://b7i7knxbcx4qc::::res://Textures/chao2.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn<>uid://pljhs3wrimv3::::res://Tower/torre.tscn<>res://World/Inimigo2.gd<>res://World/Inimigo1.gd<>uid://m72hgo3vcqyf::::res://Textures/Enemy/Inimigo2.png<>uid://b2duqqtxxtt1a::::res://Textures/Enemy/Inimito1.png<>uid://c637ql88lh2fe::::res://Textures/Enemy/Animacao-morte.png
+::res://::1697773469
+icon.svg::CompressedTexture2D::6499975186631592497::1697752927::1697752927::1::::<><>::
+README.md::TextFile::-1::1697752927::0::1::::<><>::
+::res://Enemy/::1697757196
+Animacao-morte.png::CompressedTexture2D::5461769419246006147::1697752927::1697752927::1::::<><>::
+enemy.gd::GDScript::-1::1697752927::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::317410065229021356::1697757196::0::1::::<><>::res://Enemy/enemy.gd<>uid://b2duqqtxxtt1a
+Inimigo2.png::CompressedTexture2D::4878588542210960039::1697752927::1697752927::1::::<><>::
+Inimito1.png::CompressedTexture2D::8121221880177262718::1697752927::1697752927::1::::<><>::
+::res://Player/::1697761518
+maguinho_bolado.gd::GDScript::-1::1697752927::0::1::::<>CharacterBody2D<>::
+maguinho_bolado.tscn::PackedScene::2878357307157913590::1697761518::0::1::::<><>::res://Player/maguinho_bolado.gd<>uid://pfn5w64tk3a::::res://Textures/Player/sprite sheet.png
+::res://Textures/::1697773660
+chao1.png::CompressedTexture2D::6316288921584237494::1697753531::1697753597::1::::<><>::
+chao2.png::CompressedTexture2D::4650940222233290958::1697753523::1697753597::1::::<><>::
+delimitadores.png::CompressedTexture2D::3787561722229143031::1697773151::1697773693::1::::<><>::
+README.md::TextFile::-1::1697752927::0::1::::<><>::
+terra_teste.png::CompressedTexture2D::7631948744880803028::1697752927::1697752927::1::::<><>::
+::res://Textures/Enemy/::1697753388
+Animacao-morte.png::CompressedTexture2D::7008470243999657442::1697737241::1697753388::1::::<><>::
+cyclops.png::CompressedTexture2D::8225474965961001807::1697752927::1697752927::1::::<><>::
+explosion_pixelfied.png::CompressedTexture2D::3493453591034427695::1697752927::1697752927::1::::<><>::
+giant_amoeba_new.png::CompressedTexture2D::5190503200470167348::1697752927::1697752927::1::::<><>::
+Inimigo2.png::CompressedTexture2D::909978409216045781::1697752927::1697752927::1::::<><>::
+Inimito1.png::CompressedTexture2D::4288956378541368680::1697752927::1697752927::1::::<><>::
+juggernaut.png::CompressedTexture2D::6197335957695022408::1697752927::1697752927::1::::<><>::
+kolbold_strong.png::CompressedTexture2D::6946177193432800102::1697752927::1697752927::1::::<><>::
+kolbold_weak.png::CompressedTexture2D::3972480742664740556::1697752927::1697752927::1::::<><>::
+::res://Textures/GUI/::1697752927
+EmptyItem.png::CompressedTexture2D::6422610495354167122::1697752927::1697752927::1::::<><>::
+exp_background.png::CompressedTexture2D::3030463007612864153::1697752927::1697752927::1::::<><>::
+exp_progress.png::CompressedTexture2D::3885101297883774550::1697752927::1697752927::1::::<><>::
+health.png::CompressedTexture2D::1431267063009283684::1697752927::1697752927::1::::<><>::
+healthbar.png::CompressedTexture2D::7033872399249152096::1697752927::1697752927::1::::<><>::
+::res://Textures/Items/::1697752927
+::res://Textures/Items/Gems/::1697752927
+Gem_blue.png::CompressedTexture2D::3068507983257563959::1697752927::1697752927::1::::<><>::
+Gem_green.png::CompressedTexture2D::2237292678972069894::1697752927::1697752927::1::::<><>::
+Gem_red.png::CompressedTexture2D::3650484801496245068::1697752927::1697752927::1::::<><>::
+::res://Textures/Items/Upgrades/::1697752927
+boots_4_green.png::CompressedTexture2D::2203060614134534242::1697752927::1697752927::1::::<><>::
+chunk.png::CompressedTexture2D::641916415028898894::1697752927::1697752927::1::::<><>::
+helmet_1.png::CompressedTexture2D::5725345667554770507::1697752927::1697752927::1::::<><>::
+low_boots.png::CompressedTexture2D::3371602103768707352::1697752927::1697752927::1::::<><>::
+scroll_old.png::CompressedTexture2D::981762566698526153::1697752927::1697752927::1::::<><>::
+thick_new.png::CompressedTexture2D::1524623566491880872::1697752927::1697752927::1::::<><>::
+urand_mage.png::CompressedTexture2D::7915765386256823902::1697752927::1697752927::1::::<><>::
+::res://Textures/Items/Weapons/::1697752927
+ice_spear.png::CompressedTexture2D::9155081319355910860::1697752927::1697752927::1::::<><>::
+javelin_3_new.png::CompressedTexture2D::7885100403548461753::1697752927::1697752927::1::::<><>::
+javelin_3_new_attack.png::CompressedTexture2D::2209692950768082139::1697752927::1697752927::1::::<><>::
+sword.png::CompressedTexture2D::8394114015215987530::1697752927::1697752927::1::::<><>::
+tornado.png::CompressedTexture2D::5186884567926622443::1697752927::1697752927::1::::<><>::
+::res://Textures/Menu/::1697773684
+Logo.png::CompressedTexture2D::4634059235167167775::1697770872::1697773694::1::::<><>::
+sair.png::CompressedTexture2D::1505608716183108149::1697771869::1697773693::1::::<><>::
+som - baixo.png::CompressedTexture2D::8851722948900459059::1697771696::1697773693::1::::<><>::
+som - medio.png::CompressedTexture2D::8855449293978262297::1697771721::1697773693::1::::<><>::
+som - sem.png::CompressedTexture2D::7440575209428646747::1697771730::1697773693::1::::<><>::
+::res://Textures/Player/::1697753388
+ataque.png::CompressedTexture2D::3837754883137074337::1697739278::1697753388::1::::<><>::
+player_sprite.png::CompressedTexture2D::6654117984433175866::1697752927::1697752927::1::::<><>::
+sprite sheet.png::CompressedTexture2D::31294077729705256::1697752927::1697752927::1::::<><>::
+::res://Textures/Tower/::1697753388
+TORRE AZUL ATKSPD.png::CompressedTexture2D::314308634821512529::1697747170::1697753388::1::::<><>::
+TORRE LARANJA QTD.png::CompressedTexture2D::142038836801475510::1697747608::1697753388::1::::<><>::
+TORRE ROSA HP.png::CompressedTexture2D::2997691318821764002::1697748017::1697753388::1::::<><>::
+TORRE ROXA DANO.png::CompressedTexture2D::2791450780457717415::1697745159::1697753388::1::::<><>::
+TORRE VERDE MOVSPD.png::CompressedTexture2D::4655263371672715696::1697746256::1697753388::1::::<><>::
+torre-Sheet.png::CompressedTexture2D::5969522471164678800::1697752927::1697752927::1::::<><>::
+::res://Textures/Win-Lose/::1697773619
+juliette-quebrada.png::CompressedTexture2D::6525449256336547265::1697766801::1697773693::1::::<><>::
+juliette.png::CompressedTexture2D::7799311045627960287::1697752142::1697773693::1::::<><>::
+::res://Tower/::1697761518
+torre.tscn::PackedScene::1076100753054828070::1697761518::0::1::::<><>::uid://bf1g10hkoikvv::::res://Textures/Tower/TORRE ROXA DANO.png
+::res://World/::1697761518
+Inimigo1.gd::GDScript::-1::1697760262::0::1::::<>CharacterBody2D<>::
+Inimigo2.gd::GDScript::-1::1697759604::0::1::::<>CharacterBody2D<>::
+world.tscn::PackedScene::7991536076175343120::1697761518::0::1::::<><>::uid://cv8wmdhduydte::::res://Textures/chao1.png<>uid://b7i7knxbcx4qc::::res://Textures/chao2.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn<>uid://pljhs3wrimv3::::res://Tower/torre.tscn<>res://World/Inimigo2.gd<>res://World/Inimigo1.gd<>uid://m72hgo3vcqyf::::res://Textures/Enemy/Inimigo2.png<>uid://b2duqqtxxtt1a::::res://Textures/Enemy/Inimito1.png<>uid://c637ql88lh2fe::::res://Textures/Enemy/Animacao-morte.png

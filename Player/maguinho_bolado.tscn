@@ -43,8 +43,6 @@ height = 24.0
 motion_mode = 1
 script = ExtResource("1_05ckr")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(0, 1)

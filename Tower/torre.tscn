@@ -12,3 +12,5 @@ hframes = 3
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-263, -278)
 polygon = PackedVector2Array(240, 259, 246, 267, 245, 318, 282, 318, 282, 268, 287, 260, 288, 246, 265, 224, 261, 224, 240, 245)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
