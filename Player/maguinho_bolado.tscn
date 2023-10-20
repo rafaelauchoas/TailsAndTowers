@@ -44,6 +44,7 @@ motion_mode = 1
 script = ExtResource("1_05ckr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_4mik4")
 animation = &"walk"
@@ -51,6 +52,15 @@ autoplay = "walk"
 frame = 1
 frame_progress = 0.448913
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_0ko1l")
+hframes = 3
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 5)
 shape = SubResource("CapsuleShape2D_g0ujo")
+
+[node name="walkTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.2
+one_shot = true

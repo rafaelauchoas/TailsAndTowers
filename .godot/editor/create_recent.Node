@@ -1,3 +1,5 @@
+Timer
+Sprite2D
 TextureButton
 Button
 VBoxContainer
@@ -14,5 +16,6 @@ AnimatedSprite2D
 CharacterBody2D
 AnimationPlayer
 TileMap
+StaticBody2D
 Sprite2D
 RigidBody2D
