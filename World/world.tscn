@@ -111,6 +111,15 @@ collision_mask = 2147483649
 collision_priority = 32.0
 script = ExtResource("6_ijp6u")
 
+[node name="CollisionPolygon2D" parent="TorreRoxaDMG" index="1"]
+visible = true
+
+[node name="HurtBox" parent="TorreRoxaDMG" index="3"]
+visible = true
+
+[node name="HurtBox2" parent="TorreRoxaDMG" index="4"]
+visible = true
+
 [node name="TorreVerdeMVSPD" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
 position = Vector2(466, -342)
 collision_layer = 2147483649
