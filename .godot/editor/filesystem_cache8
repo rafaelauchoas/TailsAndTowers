@@ -1,19 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697752954
+::res://::1697773469
 icon.svg::CompressedTexture2D::6499975186631592497::1697752927::1697752927::1::::<><>::
 README.md::TextFile::-1::1697752927::0::1::::<><>::
-::res://Enemy/::1697752927
+::res://Enemy/::1697757196
 Animacao-morte.png::CompressedTexture2D::5461769419246006147::1697752927::1697752927::1::::<><>::
 enemy.gd::GDScript::-1::1697752927::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::317410065229021356::1697752927::0::1::::<><>::res://Enemy/enemy.gd<>uid://dnx8lqsrkb031::::res://Enemy/Inimito1.png
+enemy.tscn::PackedScene::317410065229021356::1697757196::0::1::::<><>::res://Enemy/enemy.gd<>uid://b2duqqtxxtt1a
 Inimigo2.png::CompressedTexture2D::4878588542210960039::1697752927::1697752927::1::::<><>::
 Inimito1.png::CompressedTexture2D::8121221880177262718::1697752927::1697752927::1::::<><>::
-::res://Player/::1697752927
+::res://Player/::1697761518
 maguinho_bolado.gd::GDScript::-1::1697752927::0::1::::<>CharacterBody2D<>::
-maguinho_bolado.tscn::PackedScene::2878357307157913590::1697752927::0::1::::<><>::res://Player/maguinho_bolado.gd<>uid://pfn5w64tk3a::::res://Textures/Player/sprite sheet.png
-::res://Textures/::1697753595
+maguinho_bolado.tscn::PackedScene::2878357307157913590::1697761518::0::1::::<><>::res://Player/maguinho_bolado.gd<>uid://pfn5w64tk3a::::res://Textures/Player/sprite sheet.png
+::res://Textures/::1697773660
 chao1.png::CompressedTexture2D::6316288921584237494::1697753531::1697753597::1::::<><>::
 chao2.png::CompressedTexture2D::4650940222233290958::1697753523::1697753597::1::::<><>::
+delimitadores.png::CompressedTexture2D::3787561722229143031::1697773151::1697773693::1::::<><>::
 README.md::TextFile::-1::1697752927::0::1::::<><>::
 terra_teste.png::CompressedTexture2D::7631948744880803028::1697752927::1697752927::1::::<><>::
 ::res://Textures/Enemy/::1697753388
@@ -51,6 +52,12 @@ javelin_3_new.png::CompressedTexture2D::7885100403548461753::1697752927::1697752
 javelin_3_new_attack.png::CompressedTexture2D::2209692950768082139::1697752927::1697752927::1::::<><>::
 sword.png::CompressedTexture2D::8394114015215987530::1697752927::1697752927::1::::<><>::
 tornado.png::CompressedTexture2D::5186884567926622443::1697752927::1697752927::1::::<><>::
+::res://Textures/Menu/::1697773684
+Logo.png::CompressedTexture2D::4634059235167167775::1697770872::1697773694::1::::<><>::
+sair.png::CompressedTexture2D::1505608716183108149::1697771869::1697773693::1::::<><>::
+som - baixo.png::CompressedTexture2D::8851722948900459059::1697771696::1697773693::1::::<><>::
+som - medio.png::CompressedTexture2D::8855449293978262297::1697771721::1697773693::1::::<><>::
+som - sem.png::CompressedTexture2D::7440575209428646747::1697771730::1697773693::1::::<><>::
 ::res://Textures/Player/::1697753388
 ataque.png::CompressedTexture2D::3837754883137074337::1697739278::1697753388::1::::<><>::
 player_sprite.png::CompressedTexture2D::6654117984433175866::1697752927::1697752927::1::::<><>::
@@ -62,7 +69,12 @@ TORRE ROSA HP.png::CompressedTexture2D::2997691318821764002::1697748017::1697753
 TORRE ROXA DANO.png::CompressedTexture2D::2791450780457717415::1697745159::1697753388::1::::<><>::
 TORRE VERDE MOVSPD.png::CompressedTexture2D::4655263371672715696::1697746256::1697753388::1::::<><>::
 torre-Sheet.png::CompressedTexture2D::5969522471164678800::1697752927::1697752927::1::::<><>::
-::res://Tower/::1697752927
-torre.tscn::PackedScene::1076100753054828070::1697752927::0::1::::<><>::uid://crbxfsmjf4o85::::res://Textures/Tower/torre-Sheet.png
-::res://World/::1697752927
-world.tscn::PackedScene::7991536076175343120::1697752927::0::1::::<><>::uid://dgy8c0nh62smm::::res://Textures/terra_teste.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn<>uid://er0xygu5whd1::::res://Enemy/enemy.tscn<>uid://pljhs3wrimv3::::res://Tower/torre.tscn
+::res://Textures/Win-Lose/::1697773619
+juliette-quebrada.png::CompressedTexture2D::6525449256336547265::1697766801::1697773693::1::::<><>::
+juliette.png::CompressedTexture2D::7799311045627960287::1697752142::1697773693::1::::<><>::
+::res://Tower/::1697761518
+torre.tscn::PackedScene::1076100753054828070::1697761518::0::1::::<><>::uid://bf1g10hkoikvv::::res://Textures/Tower/TORRE ROXA DANO.png
+::res://World/::1697761518
+Inimigo1.gd::GDScript::-1::1697760262::0::1::::<>CharacterBody2D<>::
+Inimigo2.gd::GDScript::-1::1697759604::0::1::::<>CharacterBody2D<>::
+world.tscn::PackedScene::7991536076175343120::1697761518::0::1::::<><>::uid://cv8wmdhduydte::::res://Textures/chao1.png<>uid://b7i7knxbcx4qc::::res://Textures/chao2.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn<>uid://pljhs3wrimv3::::res://Tower/torre.tscn<>res://World/Inimigo2.gd<>res://World/Inimigo1.gd<>uid://m72hgo3vcqyf::::res://Textures/Enemy/Inimigo2.png<>uid://b2duqqtxxtt1a::::res://Textures/Enemy/Inimito1.png<>uid://c637ql88lh2fe::::res://Textures/Enemy/Animacao-morte.png

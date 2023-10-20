@@ -1,6 +1,6 @@
-res://Enemy/enemy.tscn
 res://World/world.tscn
-res://Tower/torre.tscn
 res://Player/maguinho_bolado.tscn
-res://World/Inimigo1.gd
-res://World/Inimigo2.gd
+res://Tower/torre.tscn
+res://World/menu.tscn
+res://World/menu.gd
+res://World/tutorial.tscn
