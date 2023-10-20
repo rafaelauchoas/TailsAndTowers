@@ -1,5 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://dl4fow6qbm44s"]
+[gd_scene load_steps=39 format=3 uid="uid://dl4fow6qbm44s"]
 
+[ext_resource type="Script" path="res://World/world.gd" id="1_b1diy"]
 [ext_resource type="Texture2D" uid="uid://cv8wmdhduydte" path="res://Textures/chao1.png" id="1_ku2st"]
 [ext_resource type="Texture2D" uid="uid://b7i7knxbcx4qc" path="res://Textures/chao2.png" id="2_2eqyb"]
 [ext_resource type="PackedScene" uid="uid://bhakehydpe6h3" path="res://Player/maguinho_bolado.tscn" id="2_hv76x"]
@@ -11,6 +13,13 @@
 [ext_resource type="PackedScene" uid="uid://xetjp40re16f" path="res://Utility/enemy_spawner.tscn" id="9_noa05"]
 [ext_resource type="Texture2D" uid="uid://biydsj8vlvnuo" path="res://Textures/Tower/TORRE ROSA HP.png" id="10_4xaju"]
 [ext_resource type="Texture2D" uid="uid://b7lbri1jnto4w" path="res://Textures/Tower/TORRE VERDE MOVSPD.png" id="11_ndj02"]
+[ext_resource type="Script" path="res://World/Inimigo2.gd" id="6_cgku3"]
+[ext_resource type="Script" path="res://World/Inimigo1.gd" id="7_2m5gh"]
+[ext_resource type="Texture2D" uid="uid://m72hgo3vcqyf" path="res://Textures/Enemy/Inimigo2.png" id="7_31ep4"]
+[ext_resource type="Texture2D" uid="uid://b2duqqtxxtt1a" path="res://Textures/Enemy/Inimito1.png" id="7_h3y43"]
+[ext_resource type="Texture2D" uid="uid://c637ql88lh2fe" path="res://Textures/Enemy/Animacao-morte.png" id="7_khn4k"]
+[ext_resource type="Texture2D" uid="uid://vplfj4bvphk4" path="res://Textures/Menu/sair.png" id="12_mxh5b"]
+[ext_resource type="Texture2D" uid="uid://jnktsu4wyu8j" path="res://Textures/Menu/sair-pressed.png" id="13_tftef"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_unbfb"]
 texture = ExtResource("1_ku2st")
@@ -41,6 +50,7 @@ sources/1 = SubResource("TileSetAtlasSource_nidae")
 sources/2 = SubResource("TileSetAtlasSource_kity2")
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_b1diy")
 
 [node name="Background" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -132,6 +142,15 @@ limit_right = 680
 limit_bottom = 620
 editor_draw_limits = true
 
+[node name="sair" type="TextureButton" parent="Camera/Camera2D"]
+offset_left = -317.0
+offset_top = -177.0
+offset_right = -285.0
+offset_bottom = -145.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("12_mxh5b")
+texture_pressed = ExtResource("13_tftef")
+
 [node name="StaticBody2D" type="StaticBody2D" parent="Camera"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera/StaticBody2D"]
@@ -154,3 +173,5 @@ polygon = PackedVector2Array(6.30636, -1.67739, 6.66023, -3.11727, 6.43274, -4.4
 [editable path="TorreVerdeMVSPD"]
 [editable path="TorreVerdeMVSPD/HurtBox"]
 [editable path="TorreVerdeMVSPD/HurtBox2"]
+
+[connection signal="pressed" from="Camera/Camera2D/sair" to="." method="_on_sair_pressed"]
