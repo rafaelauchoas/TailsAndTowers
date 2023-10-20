@@ -1,22 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697781113
-icon.svg::CompressedTexture2D::6499975186631592497::1697752927::1697752927::1::::<><>::
-README.md::TextFile::-1::1697752927::0::1::::<><>::
+::res://::1697783871
 creditos.gd::GDScript::-1::1697780262::0::1::::<>Control<>::
 derrota.gd::GDScript::-1::1697780986::0::1::::<>Control<>::
+icon.svg::CompressedTexture2D::6499975186631592497::1697752927::1697752927::1::::<><>::
+README.md::TextFile::-1::1697783069::0::1::::<><>::
 ::res://Enemy/::1697757196
 Animacao-morte.png::CompressedTexture2D::5461769419246006147::1697752927::1697752927::1::::<><>::
 enemy.gd::GDScript::-1::1697752927::0::1::::<>CharacterBody2D<>::
 enemy.tscn::PackedScene::317410065229021356::1697757196::0::1::::<><>::res://Enemy/enemy.gd<>uid://b2duqqtxxtt1a
 Inimigo2.png::CompressedTexture2D::4878588542210960039::1697752927::1697752927::1::::<><>::
 Inimito1.png::CompressedTexture2D::8121221880177262718::1697752927::1697752927::1::::<><>::
-::res://Player/::1697781142
-maguinho_bolado.gd::GDScript::-1::1697752927::0::1::::<>CharacterBody2D<>::
-maguinho_bolado.tscn::PackedScene::2878357307157913590::1697781142::0::1::::<><>::res://Player/maguinho_bolado.gd<>uid://pfn5w64tk3a::::res://Textures/Player/sprite sheet.png
-::res://Textures/::1697773693
+::res://Player/::1697783840
+maguinho_bolado.gd::GDScript::-1::1697783069::0::1::::<>CharacterBody2D<>::
+maguinho_bolado.tscn::PackedScene::2878357307157913590::1697783840::0::1::::<><>::res://Player/maguinho_bolado.gd<>uid://pfn5w64tk3a::::res://Textures/Player/sprite sheet.png
+::res://Textures/::1697784353
 chao1.png::CompressedTexture2D::6316288921584237494::1697753531::1697753597::1::::<><>::
 chao2.png::CompressedTexture2D::4650940222233290958::1697753523::1697753597::1::::<><>::
 delimitadores.png::CompressedTexture2D::3787561722229143031::1697773151::1697773693::1::::<><>::
+PrStart.ttf::FontFile::5244154186131962933::1005932950::1697784361::1::::<><>::
 README.md::TextFile::-1::1697752927::0::1::::<><>::
 terra_teste.png::CompressedTexture2D::7631948744880803028::1697752927::1697752927::1::::<><>::
 ::res://Textures/Enemy/::1697753388
@@ -29,7 +30,7 @@ Inimito1.png::CompressedTexture2D::4288956378541368680::1697752927::1697752927::
 juggernaut.png::CompressedTexture2D::6197335957695022408::1697752927::1697752927::1::::<><>::
 kolbold_strong.png::CompressedTexture2D::6946177193432800102::1697752927::1697752927::1::::<><>::
 kolbold_weak.png::CompressedTexture2D::3972480742664740556::1697752927::1697752927::1::::<><>::
-::res://Textures/GUI/::1697781256
+::res://Textures/GUI/::1697781260
 EmptyItem.png::CompressedTexture2D::6422610495354167122::1697752927::1697752927::1::::<><>::
 exp_background.png::CompressedTexture2D::3030463007612864153::1697752927::1697752927::1::::<><>::
 exp_progress.png::CompressedTexture2D::3885101297883774550::1697752927::1697752927::1::::<><>::
@@ -76,17 +77,19 @@ torre-Sheet.png::CompressedTexture2D::5969522471164678800::1697752927::169775292
 ::res://Textures/Win-Lose/::1697773693
 juliette-quebrada.png::CompressedTexture2D::6525449256336547265::1697766801::1697773693::1::::<><>::
 juliette.png::CompressedTexture2D::7799311045627960287::1697752142::1697773693::1::::<><>::
-::res://Tower/::1697781142
-torre.tscn::PackedScene::1076100753054828070::1697781142::0::1::::<><>::uid://bf1g10hkoikvv::::res://Textures/Tower/TORRE ROXA DANO.png
-::res://World/::1697781142
+::res://Tower/::1697783840
+torre.tscn::PackedScene::1076100753054828070::1697783840::0::1::::<><>::uid://bf1g10hkoikvv::::res://Textures/Tower/TORRE ROXA DANO.png
+::res://World/::1697784210
+creditos.tscn::PackedScene::306195933455177389::1697783840::0::1::::<><>::res://creditos.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
+derrota.tscn::PackedScene::380325807833386080::1697783840::0::1::::<><>::res://derrota.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
 Inimigo1.gd::GDScript::-1::1697760262::0::1::::<>CharacterBody2D<>::
 Inimigo2.gd::GDScript::-1::1697759604::0::1::::<>CharacterBody2D<>::
-menu.tscn::PackedScene::6496494531661374928::1697781142::0::1::::<><>::res://World/menu.gd
 menu.gd::GDScript::-1::1697779500::0::1::::<>Control<>::
-creditos.tscn::PackedScene::306195933455177389::1697781142::0::1::::<><>::res://creditos.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
-derrota.tscn::PackedScene::380325807833386080::1697781142::0::1::::<><>::res://derrota.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
-vitoria.gd::GDScript::-1::1697780852::0::1::::<>Control<>::
-vitoria.tscn::PackedScene::7124632205049726924::1697781142::0::1::::<><>::res://World/vitoria.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
+menu.tscn::PackedScene::6496494531661374928::1697784196::0::1::::<><>::res://World/menu.gd<>uid://b7a1jqap8spv0::::res://Textures/Menu/Logo.png
+theme-button.tres::Theme::4452207696898886837::1697784210::0::1::::<><>::
 tutorial.gd::GDScript::-1::1697780191::0::1::::<>Control<>::
-tutorial.tscn::PackedScene::1943992263870281035::1697781142::0::1::::<><>::res://World/tutorial.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
-world.tscn::PackedScene::7991536076175343120::1697781142::0::1::::<><>::uid://cv8wmdhduydte::::res://Textures/chao1.png<>uid://b7i7knxbcx4qc::::res://Textures/chao2.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn<>uid://bt7yt87oyl0lf::::res://Textures/delimitadores.png<>uid://pljhs3wrimv3::::res://Tower/torre.tscn<>res://World/Inimigo2.gd<>res://World/Inimigo1.gd<>uid://m72hgo3vcqyf::::res://Textures/Enemy/Inimigo2.png<>uid://b2duqqtxxtt1a::::res://Textures/Enemy/Inimito1.png<>uid://c637ql88lh2fe::::res://Textures/Enemy/Animacao-morte.png
+tutorial.tscn::PackedScene::1943992263870281035::1697783840::0::1::::<><>::res://World/tutorial.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
+vitoria.gd::GDScript::-1::1697780852::0::1::::<>Control<>::
+vitoria.tscn::PackedScene::7124632205049726924::1697783840::0::1::::<><>::res://World/vitoria.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
+world.gd::GDScript::-1::1697782697::0::1::::<>Node2D<>::
+world.tscn::PackedScene::7991536076175343120::1697783207::0::1::::<><>::res://World/world.gd<>uid://cv8wmdhduydte::::res://Textures/chao1.png<>uid://b7i7knxbcx4qc::::res://Textures/chao2.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn<>uid://bt7yt87oyl0lf::::res://Textures/delimitadores.png<>uid://pljhs3wrimv3::::res://Tower/torre.tscn<>res://World/Inimigo2.gd<>res://World/Inimigo1.gd<>uid://m72hgo3vcqyf::::res://Textures/Enemy/Inimigo2.png<>uid://b2duqqtxxtt1a::::res://Textures/Enemy/Inimito1.png<>uid://c637ql88lh2fe::::res://Textures/Enemy/Animacao-morte.png<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png

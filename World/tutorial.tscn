@@ -13,6 +13,17 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_030vh")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 52.0
+offset_top = 46.0
+offset_right = 92.0
+offset_bottom = 1403.0
+text = "LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM "
+fit_content = true
+autowrap_mode = 1
+tab_size = 6
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
 offset_right = 40.0

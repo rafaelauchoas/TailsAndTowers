@@ -1,7 +1,9 @@
+RichTextLabel
+Label
+TextureRect
 TextureButton
 VBoxContainer
 MarginContainer
-TextureRect
 Button
 Node
 CollisionPolygon2D
