@@ -1,9 +1,14 @@
 [gd_scene load_steps=2 format=3 uid="uid://pljhs3wrimv3"]
 
-[ext_resource type="Texture2D" uid="uid://crbxfsmjf4o85" path="res://Textures/Tower/torre-Sheet.png" id="1_0cw5w"]
+[ext_resource type="Texture2D" uid="uid://bf1g10hkoikvv" path="res://Textures/Tower/TORRE ROXA DANO.png" id="1_dqsvw"]
 
 [node name="torre" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(264, 271)
-texture = ExtResource("1_0cw5w")
+position = Vector2(1, -7)
+texture = ExtResource("1_dqsvw")
+hframes = 3
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-263, -278)
+polygon = PackedVector2Array(240, 259, 246, 267, 245, 318, 282, 318, 282, 268, 287, 260, 288, 246, 265, 224, 261, 224, 240, 245)
