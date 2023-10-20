@@ -46,6 +46,14 @@ right={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="world"
+2d_physics/layer_2="maguinho_bolado"
+2d_physics/layer_3="inimigo_player"
+2d_physics/layer_4="Tower"
+2d_physics/layer_5="inimigo_torre"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

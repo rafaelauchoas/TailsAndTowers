@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://s33f2ox06e0x"]
+
+[ext_resource type="Shader" path="res://Player/maguinho_bolado.gdshader" id="1_vkeff"]
+
+[resource]
+shader = ExtResource("1_vkeff")
+shader_parameter/whiten = false

@@ -1,15 +1,16 @@
-[gd_scene load_steps=36 format=3 uid="uid://dl4fow6qbm44s"]
+[gd_scene load_steps=16 format=3 uid="uid://dl4fow6qbm44s"]
 
 [ext_resource type="Texture2D" uid="uid://cv8wmdhduydte" path="res://Textures/chao1.png" id="1_ku2st"]
 [ext_resource type="Texture2D" uid="uid://b7i7knxbcx4qc" path="res://Textures/chao2.png" id="2_2eqyb"]
 [ext_resource type="PackedScene" uid="uid://bhakehydpe6h3" path="res://Player/maguinho_bolado.tscn" id="2_hv76x"]
 [ext_resource type="Texture2D" uid="uid://bt7yt87oyl0lf" path="res://Textures/delimitadores.png" id="3_r2tv1"]
 [ext_resource type="PackedScene" uid="uid://pljhs3wrimv3" path="res://Tower/torre.tscn" id="4_7f3wk"]
-[ext_resource type="Script" path="res://World/Inimigo2.gd" id="6_cgku3"]
-[ext_resource type="Script" path="res://World/Inimigo1.gd" id="7_2m5gh"]
-[ext_resource type="Texture2D" uid="uid://m72hgo3vcqyf" path="res://Textures/Enemy/Inimigo2.png" id="7_31ep4"]
-[ext_resource type="Texture2D" uid="uid://b2duqqtxxtt1a" path="res://Textures/Enemy/Inimito1.png" id="7_h3y43"]
-[ext_resource type="Texture2D" uid="uid://c637ql88lh2fe" path="res://Textures/Enemy/Animacao-morte.png" id="7_khn4k"]
+[ext_resource type="Script" path="res://Tower/torre.gd" id="6_ijp6u"]
+[ext_resource type="Texture2D" uid="uid://ca2mg42uyb15" path="res://Textures/Tower/TORRE LARANJA QTD.png" id="8_8oidh"]
+[ext_resource type="Texture2D" uid="uid://eqiu8ue12fnl" path="res://Textures/Tower/TORRE AZUL ATKSPD.png" id="9_hexj2"]
+[ext_resource type="PackedScene" uid="uid://xetjp40re16f" path="res://Utility/enemy_spawner.tscn" id="9_noa05"]
+[ext_resource type="Texture2D" uid="uid://biydsj8vlvnuo" path="res://Textures/Tower/TORRE ROSA HP.png" id="10_4xaju"]
+[ext_resource type="Texture2D" uid="uid://b7lbri1jnto4w" path="res://Textures/Tower/TORRE VERDE MOVSPD.png" id="11_ndj02"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_unbfb"]
 texture = ExtResource("1_ku2st")
@@ -39,165 +40,6 @@ sources/0 = SubResource("TileSetAtlasSource_unbfb")
 sources/1 = SubResource("TileSetAtlasSource_nidae")
 sources/2 = SubResource("TileSetAtlasSource_kity2")
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rna7q"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_arfse"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(0, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a5j8f"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(48, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a7cun"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(0, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tidbl"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(96, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_no6mg"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(0, 48, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_usr5c"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(48, 48, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bhhic"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(0, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_000px"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_andhs"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xln37"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_q5ldp"]
-animations = [{
-"frames": [{
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_arfse")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a5j8f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a7cun")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tidbl")
-}],
-"loop": true,
-"name": &"andar",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_no6mg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_usr5c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bhhic")
-}],
-"loop": true,
-"name": &"atacar",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.5,
-"texture": SubResource("AtlasTexture_000px")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_andhs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xln37")
-}],
-"loop": true,
-"name": &"morrer",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cm12q"]
-atlas = ExtResource("7_h3y43")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ctbmi"]
-atlas = ExtResource("7_h3y43")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1nq5h"]
-atlas = ExtResource("7_h3y43")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_115dj"]
-atlas = ExtResource("7_h3y43")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vpp8h"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gs7xv"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5h0ko"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_n4rlr"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cm12q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ctbmi")
-}],
-"loop": true,
-"name": &"andar",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1nq5h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_115dj")
-}],
-"loop": true,
-"name": &"atacar",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.5,
-"texture": SubResource("AtlasTexture_vpp8h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gs7xv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5h0ko")
-}],
-"loop": true,
-"name": &"morrer",
-"speed": 5.0
-}]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wffkq"]
-
 [node name="World" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -223,44 +65,62 @@ layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array()
 
+[node name="Enemy Spawner" parent="." instance=ExtResource("9_noa05")]
+
 [node name="MaguinhoBolado" parent="." instance=ExtResource("2_hv76x")]
 position = Vector2(72, 32)
-collision_layer = 3
-collision_mask = 3
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="MaguinhoBolado"]
 remote_path = NodePath("../../Camera/Camera2D")
 
-[node name="Torres" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
-position = Vector2(206, 96)
+[node name="TorreLaranjaQTD" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(467, 420)
 collision_layer = 2147483649
 collision_mask = 2147483649
 collision_priority = 32.0
+script = ExtResource("6_ijp6u")
 
-[node name="Inimigo2" type="CharacterBody2D" parent="."]
-position = Vector2(235, -46)
-script = ExtResource("6_cgku3")
+[node name="Sprite2D" parent="TorreLaranjaQTD" index="0"]
+position = Vector2(-1, -28)
+texture = ExtResource("8_8oidh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo2"]
-position = Vector2(0, 2.5)
-shape = SubResource("CapsuleShape2D_rna7q")
+[node name="TorreAzulAtkSpd" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(-336, 400)
+collision_layer = 2147483649
+collision_mask = 2147483649
+collision_priority = 32.0
+script = ExtResource("6_ijp6u")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Inimigo2"]
-sprite_frames = SubResource("SpriteFrames_q5ldp")
-animation = &"morrer"
-frame_progress = 0.495292
+[node name="Sprite2D" parent="TorreAzulAtkSpd" index="0"]
+texture = ExtResource("9_hexj2")
 
-[node name="Inimigo1" type="CharacterBody2D" parent="."]
-position = Vector2(-126, -90)
-script = ExtResource("7_2m5gh")
+[node name="TorreRosaHP" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(-340, -366)
+collision_layer = 2147483649
+collision_mask = 2147483649
+collision_priority = 32.0
+script = ExtResource("6_ijp6u")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Inimigo1"]
-sprite_frames = SubResource("SpriteFrames_n4rlr")
-animation = &"andar"
-frame_progress = 0.4856
+[node name="Sprite2D" parent="TorreRosaHP" index="0"]
+texture = ExtResource("10_4xaju")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigo1"]
-shape = SubResource("CapsuleShape2D_wffkq")
+[node name="TorreRoxaDMG" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(72, 21)
+collision_layer = 2147483649
+collision_mask = 2147483649
+collision_priority = 32.0
+script = ExtResource("6_ijp6u")
+
+[node name="TorreVerdeMVSPD" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(466, -342)
+collision_layer = 2147483649
+collision_mask = 2147483649
+collision_priority = 32.0
+script = ExtResource("6_ijp6u")
+
+[node name="Sprite2D" parent="TorreVerdeMVSPD" index="0"]
+position = Vector2(3, -28)
+texture = ExtResource("11_ndj02")
 
 [node name="Camera" type="Node" parent="."]
 
@@ -278,3 +138,19 @@ editor_draw_limits = true
 position = Vector2(74, 51)
 scale = Vector2(79.1264, -67.3666)
 polygon = PackedVector2Array(6.30636, -1.67739, 6.66023, -3.11727, 6.43274, -4.42355, 6.63495, -5.5814, 5.7882, -6.33845, 5.30796, -6.91737, 4.89091, -7.48145, 4.61287, -7.36269, 3.94306, -7.37754, 3.67766, -7.76349, 3.47545, -7.6002, 2.33803, -7.31816, 1.57975, -6.88768, 0.909936, -7.34785, 0.75828, -6.91737, 0.18957, -7.03612, -0.012638, -6.82831, -0.69509, -7.24394, -1.02368, -6.62049, -1.74404, -7.15488, -2.03472, -6.60564, -2.65398, -7.15488, -3.0584, -6.63533, -3.8925, -7.19941, -4.57496, -6.88768, -5.91458, -6.82831, -6.92562, -7.19941, -6.73605, -5.98219, -6.81188, -5.10638, -6.78661, -4.28996, -6.59704, -3.33993, -6.59704, -1.94458, -6.49593, -0.920337, -7.16575, -0.237506, -7.16575, 0.43048, -7.45642, 0.519545, -6.9509, 1.36566, -6.96354, 2.22662, -7.10256, 2.37506, -7.39323, 2.30084, -7.30476, 2.68679, -7.16575, 3.05789, -7.16575, 3.96339, -6.8498, 4.51262, -7.41851, 5.03216, -7.27949, 5.52202, -7.02673, 6.30876, -6.83716, 7.28847, -6.43274, 7.67442, -5.85139, 7.9713, -5.37115, 7.61504, -5.08048, 7.61504, -4.6887, 8.26819, -4.23373, 8.26819, -3.86723, 7.55567, -3.38698, 7.80802, -2.43913, 7.74864, -2.27484, 8.03068, -1.50392, 7.7338, -1.37754, 8.04552, -0.935212, 8.00099, -0.75828, 7.54082, -0.278036, 7.79317, 0.0817027, 7.54349, 0.556072, 7.6002, 0.846746, 7.30332, 1.97153, 7.39238, 2.55288, 7.28847, 2.67926, 7.49629, 2.83091, 7.34785, 3.48809, 7.58536, 4.19582, 7.85255, 4.76453, 7.85255, 5.28268, 7.88224, 5.76293, 7.64473, 6.02833, 7.06581, 6.29373, 7.06581, 6.63495, 6.88768, 6.53385, 6.11579, 6.10416, 5.68531, 5.83876, 4.98763, 5.73765, 4.6759, 6.07888, 3.9337, 6.49593, 3.82979, 6.0536, 2.93914, 5.6871, 2.21178, 5.54808, 1.76645, 5.7882, 1.23206, 5.87667, -0.237506, 6.00305, -0.846116, 6.78661, -0.697675, 7.96194, -0.371104, 8.12624, 8.83226, 3.23533, 8.86195, -8.42955, 8.80258, -8.61912, -0.920337, -8.4801, -9.55963, 8.07568, -9.50025, 7.91139, -0.43048, 6.28109, -0.816428, 5.99041, -0.86096, 6.25581, -1.54379)
+
+[editable path="TorreLaranjaQTD"]
+[editable path="TorreLaranjaQTD/HurtBox"]
+[editable path="TorreLaranjaQTD/HurtBox2"]
+[editable path="TorreAzulAtkSpd"]
+[editable path="TorreAzulAtkSpd/HurtBox"]
+[editable path="TorreAzulAtkSpd/HurtBox2"]
+[editable path="TorreRosaHP"]
+[editable path="TorreRosaHP/HurtBox"]
+[editable path="TorreRosaHP/HurtBox2"]
+[editable path="TorreRoxaDMG"]
+[editable path="TorreRoxaDMG/HurtBox"]
+[editable path="TorreRoxaDMG/HurtBox2"]
+[editable path="TorreVerdeMVSPD"]
+[editable path="TorreVerdeMVSPD/HurtBox"]
+[editable path="TorreVerdeMVSPD/HurtBox2"]
