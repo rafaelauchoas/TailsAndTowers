@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://foh57r34bje3"]
+[gd_scene load_steps=4 format=3 uid="uid://foh57r34bje3"]
 
 [ext_resource type="Script" path="res://derrota.gd" id="1_h6snd"]
 [ext_resource type="Texture2D" uid="uid://vplfj4bvphk4" path="res://Textures/Menu/sair.png" id="2_2658w"]
 [ext_resource type="Texture2D" uid="uid://jnktsu4wyu8j" path="res://Textures/Menu/sair-pressed.png" id="3_eisq1"]
-[ext_resource type="Texture2D" uid="uid://cy78gwossb6r2" path="res://Textures/Win-Lose/juliette-quebrada.png" id="4_0k86a"]
 
 [node name="derrota" type="Control"]
 layout_mode = 3
@@ -27,22 +26,5 @@ layout_mode = 2
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_2658w")
 texture_pressed = ExtResource("3_eisq1")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 122.0
-offset_top = 123.0
-offset_right = 506.0
-offset_bottom = 315.0
-texture = ExtResource("4_0k86a")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 277.0
-offset_top = 88.0
-offset_right = 317.0
-offset_bottom = 128.0
-text = "xauuu"
-scroll_active = false
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/sair" to="." method="_on_sair_pressed"]
