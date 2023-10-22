@@ -18,7 +18,6 @@ script = ExtResource("1_h6snd")
 
 [node name="Fundo" type="TextureRect" parent="."]
 modulate = Color(0.160784, 0.0862745, 0.301961, 1)
-layout_mode = 0
 offset_right = 640.0
 offset_bottom = 360.0
 texture = ExtResource("2_cj6b2")
@@ -30,7 +29,6 @@ scale = Vector2(1.10417, 1.16667)
 texture = ExtResource("6_1q23f")
 
 [node name="Parabens" type="Label" parent="."]
-layout_mode = 0
 offset_left = 192.0
 offset_top = 32.0
 offset_right = 448.0
@@ -42,7 +40,6 @@ text = "Derrota"
 horizontal_alignment = 1
 
 [node name="text" type="Label" parent="."]
-layout_mode = 0
 offset_left = 32.0
 offset_top = 256.0
 offset_right = 608.0
