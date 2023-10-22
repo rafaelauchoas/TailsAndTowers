@@ -1,12 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://2xxjepxichd0"]
+[gd_scene load_steps=4 format=3 uid="uid://2xxjepxichd0"]
 
 [ext_resource type="Script" path="res://World/tutorial.gd" id="1_030vh"]
 [ext_resource type="Texture2D" uid="uid://vplfj4bvphk4" path="res://Textures/Menu/sair.png" id="1_rheua"]
 [ext_resource type="Texture2D" uid="uid://jnktsu4wyu8j" path="res://Textures/Menu/sair-pressed.png" id="3_0dof1"]
-[ext_resource type="Script" path="res://World/introTexto.gd" id="3_gn33k"]
-[ext_resource type="FontFile" uid="uid://bo3kh61b5mhq" path="res://Textures/Menu/prstartk.ttf" id="3_iie27"]
-[ext_resource type="Texture2D" uid="uid://dtolfqs65olce" path="res://Textures/Menu/Fundo1.PNG" id="4_5theh"]
-[ext_resource type="Texture2D" uid="uid://bg8ruyh7e84sq" path="res://Textures/Menu/button.png" id="7_pdctc"]
 
 [node name="tutorial" type="Control"]
 layout_mode = 3
@@ -17,43 +13,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_030vh")
 
-[node name="Fundo" type="TextureRect" parent="."]
-modulate = Color(0.34902, 0.215686, 0.603922, 1)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -320.0
-offset_top = -180.5
-offset_right = 320.0
-offset_bottom = 180.5
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_5theh")
-expand_mode = 1
-
-[node name="introTexto" type="RichTextLabel" parent="."]
-custom_minimum_size = Vector2(16, 16)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -256.0
-offset_top = -148.0
-offset_right = 256.0
-offset_bottom = 124.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/normal_font = ExtResource("3_iie27")
-bbcode_enabled = true
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 52.0
+offset_top = 46.0
+offset_right = 92.0
+offset_bottom = 1403.0
+text = "LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM "
 fit_content = true
-scroll_active = false
-context_menu_enabled = true
-script = ExtResource("3_gn33k")
+autowrap_mode = 1
+tab_size = 6
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -69,75 +38,4 @@ mouse_default_cursor_shape = 2
 texture_normal = ExtResource("1_rheua")
 texture_pressed = ExtResource("3_0dof1")
 
-[node name="Voltar" type="TextureButton" parent="."]
-modulate = Color(0.960784, 0.960784, 0.913725, 1)
-layout_mode = 0
-offset_left = 48.0
-offset_top = 272.0
-offset_right = 184.0
-offset_bottom = 336.0
-texture_normal = ExtResource("7_pdctc")
-stretch_mode = 6
-
-[node name="Label" type="Label" parent="Voltar"]
-layout_mode = 0
-offset_left = 16.0
-offset_top = 26.0
-offset_right = 124.0
-offset_bottom = 48.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_iie27")
-theme_override_font_sizes/font_size = 18
-text = "Voltar"
-
-[node name="Pular" type="TextureButton" parent="."]
-modulate = Color(0.960784, 0.960784, 0.913725, 1)
-layout_mode = 0
-offset_left = 256.0
-offset_top = 272.0
-offset_right = 392.0
-offset_bottom = 336.0
-texture_normal = ExtResource("7_pdctc")
-stretch_mode = 6
-
-[node name="Label" type="Label" parent="Pular"]
-layout_mode = 0
-offset_left = 20.0
-offset_top = 25.0
-offset_right = 120.0
-offset_bottom = 49.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_iie27")
-theme_override_font_sizes/font_size = 20
-text = "Pular"
-
-[node name="Prox" type="TextureButton" parent="."]
-modulate = Color(0.960784, 0.960784, 0.913725, 1)
-layout_mode = 0
-offset_left = 456.0
-offset_top = 272.0
-offset_right = 592.0
-offset_bottom = 336.0
-texture_normal = ExtResource("7_pdctc")
-stretch_mode = 6
-
-[node name="Label" type="Label" parent="Prox"]
-layout_mode = 0
-offset_left = 14.0
-offset_top = 26.0
-offset_right = 126.0
-offset_bottom = 45.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_iie27")
-theme_override_font_sizes/font_size = 16
-text = "Próximo"
-
-[node name="mudapag" type="Timer" parent="."]
-wait_time = 0.001
-one_shot = true
-
 [connection signal="pressed" from="MarginContainer/VBoxContainer/sair" to="." method="_on_sair_pressed"]
-[connection signal="pressed" from="Voltar" to="." method="_on_Voltar_pressed"]
-[connection signal="pressed" from="Pular" to="." method="_on_Pular_pressed"]
-[connection signal="pressed" from="Prox" to="." method="_on_Prox_pressed"]
-[connection signal="timeout" from="mudapag" to="introTexto" method="_on_mudapag_timeout"]

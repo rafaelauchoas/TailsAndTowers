@@ -6,8 +6,4 @@ res://World/tutorial.tscn
 res://World/creditos.tscn
 res://World/vitoria.tscn
 res://World/derrota.tscn
-res://World/menu.gd
-res://World/tutorial.gd
-res://World/introTexto.gd
-res://World/music_control.tscn
-res://World/music_ontrol.gd
+res://World/theme-button.tres

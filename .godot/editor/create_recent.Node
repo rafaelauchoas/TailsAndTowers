@@ -1,15 +1,10 @@
-AudioStreamPlayer
+RichTextLabel
 Label
 TextureRect
-ColorRect
-Timer
 TextureButton
-RichTextLabel
-Control
-Button
-Sprite2D
 VBoxContainer
 MarginContainer
+Button
 Node
 CollisionPolygon2D
 CollisionShape2D
@@ -22,6 +17,5 @@ AnimatedSprite2D
 CharacterBody2D
 AnimationPlayer
 TileMap
-StaticBody2D
 Sprite2D
 RigidBody2D

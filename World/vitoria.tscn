@@ -1,11 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://c8rhwfemyw62k"]
+[gd_scene load_steps=5 format=3 uid="uid://c8rhwfemyw62k"]
 
 [ext_resource type="Script" path="res://World/vitoria.gd" id="1_gvctq"]
 [ext_resource type="Texture2D" uid="uid://vplfj4bvphk4" path="res://Textures/Menu/sair.png" id="2_4hul0"]
-[ext_resource type="Texture2D" uid="uid://dtolfqs65olce" path="res://Textures/Menu/Fundo1.PNG" id="2_i8rc7"]
-[ext_resource type="Texture2D" uid="uid://djebrpr1f1vv8" path="res://Textures/Win-Lose/juliette.png" id="3_4ih5y"]
 [ext_resource type="Texture2D" uid="uid://jnktsu4wyu8j" path="res://Textures/Menu/sair-pressed.png" id="3_ocna2"]
-[ext_resource type="FontFile" uid="uid://bo3kh61b5mhq" path="res://Textures/Menu/prstartk.ttf" id="4_n8208"]
+[ext_resource type="Texture2D" uid="uid://djebrpr1f1vv8" path="res://Textures/Win-Lose/juliette.png" id="4_7norb"]
 
 [node name="vitoria" type="Control"]
 layout_mode = 3
@@ -15,45 +13,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gvctq")
-
-[node name="Fundo" type="TextureRect" parent="."]
-modulate = Color(0.160784, 0.0862745, 0.301961, 1)
-layout_mode = 0
-offset_right = 640.0
-offset_bottom = 360.0
-texture = ExtResource("2_i8rc7")
-expand_mode = 1
-
-[node name="Juliette" type="Sprite2D" parent="."]
-position = Vector2(320, 176)
-scale = Vector2(1.10417, 1.16667)
-texture = ExtResource("3_4ih5y")
-
-[node name="Parabens" type="Label" parent="."]
-layout_mode = 0
-offset_left = 192.0
-offset_top = 32.0
-offset_right = 448.0
-offset_bottom = 67.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_n8208")
-theme_override_font_sizes/font_size = 32
-text = "Parabéns"
-horizontal_alignment = 1
-
-[node name="text" type="Label" parent="."]
-layout_mode = 0
-offset_left = 32.0
-offset_top = 256.0
-offset_right = 608.0
-offset_bottom = 337.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_n8208")
-theme_override_font_sizes/font_size = 24
-text = "O mago é implacável! 
-Você recuperou seu
-óculos com sucesso"
-horizontal_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -68,5 +27,22 @@ layout_mode = 2
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_4hul0")
 texture_pressed = ExtResource("3_ocna2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 126.0
+offset_right = 510.0
+offset_bottom = 318.0
+texture = ExtResource("4_7norb")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 68.0
+offset_right = 244.0
+offset_bottom = 108.0
+text = "oieee"
+scroll_active = false
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/sair" to="." method="_on_sair_pressed"]
