@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt4bnc7p50kfo"]
+
+[ext_resource type="Script" path="res://World/music_ontrol.gd" id="1_75tod"]
+[ext_resource type="AudioStream" uid="uid://0lb71mkjixm1" path="res://Textures/Menu/KEYMAGEtheme3.mp3" id="1_nbf75"]
+
+[node name="MusicControl" type="Node2D"]
+script = ExtResource("1_75tod")
+
+[node name="musca" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_nbf75")
+volume_db = -30.0
+autoplay = true
