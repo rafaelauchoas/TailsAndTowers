@@ -116,6 +116,7 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="Music" type="MarginContainer" parent="."]
+layout_mode = 0
 offset_left = 608.0
 offset_right = 640.0
 offset_bottom = 32.0

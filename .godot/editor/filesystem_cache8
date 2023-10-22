@@ -1,106 +1,106 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697811588
-creditos.gd::GDScript::-1::1697788060::0::1::::<>Control<>::
-derrota.gd::GDScript::-1::1697788060::0::1::::<>Control<>::
-icon.svg::CompressedTexture2D::6499975186631592497::1697788060::1697788060::1::::<><>::
-README.md::TextFile::-1::1697788060::0::1::::<><>::
-::res://Enemy/::1697757196
-Animacao-morte.png::CompressedTexture2D::5461769419246006147::1697788060::1697788060::1::::<><>::
-enemy.gd::GDScript::-1::1697788060::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::317410065229021356::1697788060::0::1::::<><>::res://Enemy/enemy.gd<>uid://b2duqqtxxtt1a
-Inimigo2.png::CompressedTexture2D::4878588542210960039::1697788060::1697788060::1::::<><>::
-Inimito1.png::CompressedTexture2D::8121221880177262718::1697788060::1697788060::1::::<><>::
-::res://Player/::1697785480
-maguinho_bolado.gd::GDScript::-1::1697788060::0::1::::<>CharacterBody2D<>::
-maguinho_bolado.tscn::PackedScene::2878357307157913590::1697811209::0::1::::<><>::res://Player/maguinho_bolado.gd<>uid://pfn5w64tk3a::::res://Textures/Player/sprite sheet.png
-::res://Textures/::1697784361
-chao1.png::CompressedTexture2D::6316288921584237494::1697788060::1697788060::1::::<><>::
-chao2.png::CompressedTexture2D::4650940222233290958::1697788060::1697788060::1::::<><>::
-delimitadores.png::CompressedTexture2D::3787561722229143031::1697788060::1697788060::1::::<><>::
-PrStart.ttf::FontFile::5244154186131962933::1005932950::1697784361::1::::<><>::
-README.md::TextFile::-1::1697788061::0::1::::<><>::
-terra_teste.png::CompressedTexture2D::7631948744880803028::1697788061::1697788061::1::::<><>::
-::res://Textures/Enemy/::1697753388
-Animacao-morte.png::CompressedTexture2D::7008470243999657442::1697788060::1697788060::1::::<><>::
-cyclops.png::CompressedTexture2D::8225474965961001807::1697788060::1697788060::1::::<><>::
-explosion_pixelfied.png::CompressedTexture2D::3493453591034427695::1697788060::1697788060::1::::<><>::
-giant_amoeba_new.png::CompressedTexture2D::5190503200470167348::1697788060::1697788060::1::::<><>::
-Inimigo2.png::CompressedTexture2D::909978409216045781::1697788060::1697788060::1::::<><>::
-Inimito1.png::CompressedTexture2D::4288956378541368680::1697788060::1697788060::1::::<><>::
-juggernaut.png::CompressedTexture2D::6197335957695022408::1697788060::1697788060::1::::<><>::
-kolbold_strong.png::CompressedTexture2D::6946177193432800102::1697788060::1697788060::1::::<><>::
-kolbold_weak.png::CompressedTexture2D::3972480742664740556::1697788060::1697788060::1::::<><>::
-::res://Textures/GUI/::1697781260
-EmptyItem.png::CompressedTexture2D::6422610495354167122::1697788060::1697788060::1::::<><>::
-exp_background.png::CompressedTexture2D::3030463007612864153::1697788060::1697788060::1::::<><>::
-exp_progress.png::CompressedTexture2D::3885101297883774550::1697788060::1697788061::1::::<><>::
-health.png::CompressedTexture2D::1431267063009283684::1697788061::1697788061::1::::<><>::
-healthbar.png::CompressedTexture2D::7033872399249152096::1697788061::1697788061::1::::<><>::
-icone.svg::CompressedTexture2D::1491067902456940451::1697788061::1697788093::1::::<><>::
-::res://Textures/Items/::1697752927
-::res://Textures/Items/Gems/::1697752927
-Gem_blue.png::CompressedTexture2D::3068507983257563959::1697788061::1697788061::1::::<><>::
-Gem_green.png::CompressedTexture2D::2237292678972069894::1697788061::1697788061::1::::<><>::
-Gem_red.png::CompressedTexture2D::3650484801496245068::1697788061::1697788061::1::::<><>::
-::res://Textures/Items/Upgrades/::1697752927
-boots_4_green.png::CompressedTexture2D::2203060614134534242::1697788061::1697788061::1::::<><>::
-chunk.png::CompressedTexture2D::641916415028898894::1697788061::1697788061::1::::<><>::
-helmet_1.png::CompressedTexture2D::5725345667554770507::1697788061::1697788061::1::::<><>::
-low_boots.png::CompressedTexture2D::3371602103768707352::1697788061::1697788061::1::::<><>::
-scroll_old.png::CompressedTexture2D::981762566698526153::1697788061::1697788061::1::::<><>::
-thick_new.png::CompressedTexture2D::1524623566491880872::1697788061::1697788061::1::::<><>::
-urand_mage.png::CompressedTexture2D::7915765386256823902::1697788061::1697788061::1::::<><>::
-::res://Textures/Items/Weapons/::1697752927
-ice_spear.png::CompressedTexture2D::9155081319355910860::1697788061::1697788061::1::::<><>::
-javelin_3_new.png::CompressedTexture2D::7885100403548461753::1697788061::1697788061::1::::<><>::
-javelin_3_new_attack.png::CompressedTexture2D::2209692950768082139::1697788061::1697788061::1::::<><>::
-sword.png::CompressedTexture2D::8394114015215987530::1697788061::1697788061::1::::<><>::
-tornado.png::CompressedTexture2D::5186884567926622443::1697788061::1697788061::1::::<><>::
-::res://Textures/Menu/::1697811539
-button.png::CompressedTexture2D::2876747388995040240::1697793357::1697793421::1::::<><>::
-Fundo1.PNG::CompressedTexture2D::8522429054277943972::1697796248::1697796253::1::::<><>::
-fundo2.jpg::CompressedTexture2D::8999590290302967439::1697791575::1697791632::1::::<><>::
-KEYMAGEtheme3.mp3::AudioStreamMP3::1777548493254669726::1697789562::1697808721::1::::<><>::
-Logo.png::CompressedTexture2D::4634059235167167775::1697788061::1697788061::1::::<><>::
-prstartk.ttf::FontFile::100808482667617710::1014923002::1697794821::1::::<><>::
-sair-pressed.png::CompressedTexture2D::659178581221311355::1697788061::1697788061::1::::<><>::
-sair.png::CompressedTexture2D::1505608716183108149::1697788061::1697788061::1::::<><>::
-som - baixo.png::CompressedTexture2D::8851722948900459059::1697788061::1697788061::1::::<><>::
-som - medio-pressed.png::CompressedTexture2D::5849069823275588844::1697808629::1697808653::1::::<><>::
-som - medio.png::CompressedTexture2D::8855449293978262297::1697788061::1697788061::1::::<><>::
-som - sem-pressed.png::CompressedTexture2D::3282395769877675211::1697808632::1697808653::1::::<><>::
-som - sem.png::CompressedTexture2D::7440575209428646747::1697788061::1697788061::1::::<><>::
-::res://Textures/Player/::1697811539
-ataque.png::CompressedTexture2D::3837754883137074337::1697788061::1697788061::1::::<><>::
-fundo1.png::CompressedTexture2D::5706785851818452436::1697790889::1697790890::1::::<><>::
-player_sprite.png::CompressedTexture2D::6654117984433175866::1697788061::1697788061::1::::<><>::
-sprite sheet.png::CompressedTexture2D::31294077729705256::1697788061::1697788061::1::::<><>::
-::res://Textures/Tower/::1697753388
-TORRE AZUL ATKSPD.png::CompressedTexture2D::314308634821512529::1697788061::1697788061::1::::<><>::
-TORRE LARANJA QTD.png::CompressedTexture2D::142038836801475510::1697788061::1697788061::1::::<><>::
-TORRE ROSA HP.png::CompressedTexture2D::2997691318821764002::1697788061::1697788061::1::::<><>::
-TORRE ROXA DANO.png::CompressedTexture2D::2791450780457717415::1697788061::1697788061::1::::<><>::
-TORRE VERDE MOVSPD.png::CompressedTexture2D::4655263371672715696::1697788061::1697788061::1::::<><>::
-torre-Sheet.png::CompressedTexture2D::5969522471164678800::1697788061::1697788061::1::::<><>::
-::res://Textures/Win-Lose/::1697773693
-juliette-quebrada.png::CompressedTexture2D::6525449256336547265::1697788061::1697788061::1::::<><>::
-juliette.png::CompressedTexture2D::7799311045627960287::1697788061::1697788061::1::::<><>::
-::res://Tower/::1697785480
-torre.tscn::PackedScene::1076100753054828070::1697811209::0::1::::<><>::uid://bf1g10hkoikvv::::res://Textures/Tower/TORRE ROXA DANO.png
-::res://World/::1697811539
-creditos.tscn::PackedScene::306195933455177389::1697811211::0::1::::<><>::res://creditos.gd<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf
-derrota.tscn::PackedScene::380325807833386080::1697811212::0::1::::<><>::res://derrota.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf<>uid://cy78gwossb6r2::::res://Textures/Win-Lose/juliette-quebrada.png
-Inimigo1.gd::GDScript::-1::1697788061::0::1::::<>CharacterBody2D<>::
-Inimigo2.gd::GDScript::-1::1697788062::0::1::::<>CharacterBody2D<>::
-introTexto.gd::GDScript::-1::1697802196::0::1::::<>RichTextLabel<>::
-menu.gd::GDScript::-1::1697810549::0::1::::<>Control<>::
-menu.tscn::PackedScene::6496494531661374928::1697811245::0::1::::<><>::res://World/menu.gd<>uid://b7a1jqap8spv0::::res://Textures/Menu/Logo.png<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://bg8ruyh7e84sq::::res://Textures/Menu/button.png<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf<>uid://dyfv7rhs00qd2::::res://Textures/Menu/som - medio.png<>uid://deajgly246ajb::::res://Textures/Menu/som - sem.png
-music_control.tscn::PackedScene::3779959755200037352::1697811212::0::1::::<><>::res://World/music_ontrol.gd<>uid://0lb71mkjixm1::::res://Textures/Menu/KEYMAGEtheme3.mp3
-music_ontrol.gd::GDScript::-1::1697811028::0::1::::<>Node2D<>::
-theme-button.tres::Theme::4452207696898886837::1697784742::0::1::::<><>::res://World/D:DocumentsGameRexGameRex2023TexturesPrStart.ttf
-tutorial.gd::GDScript::-1::1697807473::0::1::::<>Control<>::
-tutorial.tscn::PackedScene::1943992263870281035::1697811211::0::1::::<><>::res://World/tutorial.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png<>res://World/introTexto.gd<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://bg8ruyh7e84sq::::res://Textures/Menu/button.png
-vitoria.gd::GDScript::-1::1697788062::0::1::::<>Control<>::
-vitoria.tscn::PackedScene::7124632205049726924::1697811211::0::1::::<><>::res://World/vitoria.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://djebrpr1f1vv8::::res://Textures/Win-Lose/juliette.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf
-world.gd::GDScript::-1::1697788062::0::1::::<>Node2D<>::
-world.tscn::PackedScene::7991536076175343120::1697811210::0::1::::<><>::res://World/world.gd<>uid://cv8wmdhduydte::::res://Textures/chao1.png<>uid://b7i7knxbcx4qc::::res://Textures/chao2.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn<>uid://bt7yt87oyl0lf::::res://Textures/delimitadores.png<>uid://pljhs3wrimv3::::res://Tower/torre.tscn<>res://World/Inimigo2.gd<>res://World/Inimigo1.gd<>uid://m72hgo3vcqyf::::res://Textures/Enemy/Inimigo2.png<>uid://b2duqqtxxtt1a::::res://Textures/Enemy/Inimito1.png<>uid://c637ql88lh2fe::::res://Textures/Enemy/Animacao-morte.png<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
+::res://::1697939573
+creditos.gd::GDScript::-1::1697939458::0::1::::<>Control<>::
+derrota.gd::GDScript::-1::1697939458::0::1::::<>Control<>::
+icon.svg::CompressedTexture2D::6499975186631592497::1697939458::1697939458::1::::<><>::
+README.md::TextFile::-1::1697939555::0::1::::<><>::
+::res://Enemy/::1697939554
+Animacao-morte.png::CompressedTexture2D::5461769419246006147::1697939458::1697939458::1::::<><>::
+enemy.gd::GDScript::-1::1697939458::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::317410065229021356::1697939458::0::1::::<><>::res://Enemy/enemy.gd<>uid://b2duqqtxxtt1a::::res://Textures/Enemy/Inimito1.png
+Inimigo2.png::CompressedTexture2D::4878588542210960039::1697939458::1697939458::1::::<><>::
+Inimito1.png::CompressedTexture2D::8121221880177262718::1697939458::1697939458::1::::<><>::
+::res://Player/::1697939555
+maguinho_bolado.gd::GDScript::-1::1697939555::0::1::::<>CharacterBody2D<>::
+maguinho_bolado.tscn::PackedScene::2878357307157913590::1697939555::0::1::::<><>::res://Player/maguinho_bolado.gd<>uid://pfn5w64tk3a::::res://Textures/Player/sprite sheet.png
+::res://Textures/::1697939555
+chao1.png::CompressedTexture2D::6316288921584237494::1697939458::1697939458::1::::<><>::
+chao2.png::CompressedTexture2D::4650940222233290958::1697939458::1697939458::1::::<><>::
+delimitadores.png::CompressedTexture2D::3787561722229143031::1697939458::1697939458::1::::<><>::
+PrStart.ttf::FontFile::5244154186131962933::1697939555::1697939555::1::::<><>::
+README.md::TextFile::-1::1697939458::0::1::::<><>::
+terra_teste.png::CompressedTexture2D::7631948744880803028::1697939458::1697939458::1::::<><>::
+::res://Textures/Enemy/::1697939458
+Animacao-morte.png::CompressedTexture2D::7008470243999657442::1697939458::1697939458::1::::<><>::
+cyclops.png::CompressedTexture2D::8225474965961001807::1697939458::1697939458::1::::<><>::
+explosion_pixelfied.png::CompressedTexture2D::3493453591034427695::1697939458::1697939458::1::::<><>::
+giant_amoeba_new.png::CompressedTexture2D::5190503200470167348::1697939458::1697939458::1::::<><>::
+Inimigo2.png::CompressedTexture2D::909978409216045781::1697939458::1697939458::1::::<><>::
+Inimito1.png::CompressedTexture2D::4288956378541368680::1697939458::1697939458::1::::<><>::
+juggernaut.png::CompressedTexture2D::6197335957695022408::1697939458::1697939458::1::::<><>::
+kolbold_strong.png::CompressedTexture2D::6946177193432800102::1697939458::1697939458::1::::<><>::
+kolbold_weak.png::CompressedTexture2D::3972480742664740556::1697939458::1697939458::1::::<><>::
+::res://Textures/GUI/::1697939554
+EmptyItem.png::CompressedTexture2D::6422610495354167122::1697939458::1697939458::1::::<><>::
+exp_background.png::CompressedTexture2D::3030463007612864153::1697939458::1697939458::1::::<><>::
+exp_progress.png::CompressedTexture2D::3885101297883774550::1697939458::1697939458::1::::<><>::
+health.png::CompressedTexture2D::1431267063009283684::1697939458::1697939458::1::::<><>::
+healthbar.png::CompressedTexture2D::7033872399249152096::1697939458::1697939458::1::::<><>::
+icone.svg::CompressedTexture2D::1491067902456940451::1697939458::1697939554::1::::<><>::
+::res://Textures/Items/::1697939458
+::res://Textures/Items/Gems/::1697939458
+Gem_blue.png::CompressedTexture2D::3068507983257563959::1697939458::1697939458::1::::<><>::
+Gem_green.png::CompressedTexture2D::2237292678972069894::1697939458::1697939458::1::::<><>::
+Gem_red.png::CompressedTexture2D::3650484801496245068::1697939458::1697939458::1::::<><>::
+::res://Textures/Items/Upgrades/::1697939458
+boots_4_green.png::CompressedTexture2D::2203060614134534242::1697939458::1697939458::1::::<><>::
+chunk.png::CompressedTexture2D::641916415028898894::1697939458::1697939458::1::::<><>::
+helmet_1.png::CompressedTexture2D::5725345667554770507::1697939458::1697939458::1::::<><>::
+low_boots.png::CompressedTexture2D::3371602103768707352::1697939458::1697939458::1::::<><>::
+scroll_old.png::CompressedTexture2D::981762566698526153::1697939458::1697939458::1::::<><>::
+thick_new.png::CompressedTexture2D::1524623566491880872::1697939458::1697939458::1::::<><>::
+urand_mage.png::CompressedTexture2D::7915765386256823902::1697939458::1697939458::1::::<><>::
+::res://Textures/Items/Weapons/::1697939458
+ice_spear.png::CompressedTexture2D::9155081319355910860::1697939458::1697939458::1::::<><>::
+javelin_3_new.png::CompressedTexture2D::7885100403548461753::1697939458::1697939458::1::::<><>::
+javelin_3_new_attack.png::CompressedTexture2D::2209692950768082139::1697939458::1697939458::1::::<><>::
+sword.png::CompressedTexture2D::8394114015215987530::1697939458::1697939458::1::::<><>::
+tornado.png::CompressedTexture2D::5186884567926622443::1697939458::1697939458::1::::<><>::
+::res://Textures/Menu/::1697939555
+button.png::CompressedTexture2D::2876747388995040240::1697939555::1697939555::1::::<><>::
+Fundo1.PNG::CompressedTexture2D::8522429054277943972::1697939555::1697939555::1::::<><>::
+fundo2.jpg::CompressedTexture2D::8999590290302967439::1697939555::1697939555::1::::<><>::
+KEYMAGEtheme3.mp3::AudioStreamMP3::1777548493254669726::1697939555::1697939555::1::::<><>::
+Logo.png::CompressedTexture2D::4634059235167167775::1697939458::1697939458::1::::<><>::
+prstartk.ttf::FontFile::100808482667617710::1697939555::1697939555::1::::<><>::
+sair-pressed.png::CompressedTexture2D::659178581221311355::1697939458::1697939458::1::::<><>::
+sair.png::CompressedTexture2D::1505608716183108149::1697939458::1697939458::1::::<><>::
+som - baixo.png::CompressedTexture2D::8851722948900459059::1697939458::1697939458::1::::<><>::
+som - medio-pressed.png::CompressedTexture2D::5849069823275588844::1697939555::1697939555::1::::<><>::
+som - medio.png::CompressedTexture2D::8855449293978262297::1697939458::1697939458::1::::<><>::
+som - sem-pressed.png::CompressedTexture2D::3282395769877675211::1697939555::1697939555::1::::<><>::
+som - sem.png::CompressedTexture2D::7440575209428646747::1697939458::1697939458::1::::<><>::
+::res://Textures/Player/::1697939555
+ataque.png::CompressedTexture2D::3837754883137074337::1697939458::1697939458::1::::<><>::
+fundo1.png::CompressedTexture2D::5706785851818452436::1697939555::1697939555::1::::<><>::
+player_sprite.png::CompressedTexture2D::6654117984433175866::1697939458::1697939458::1::::<><>::
+sprite sheet.png::CompressedTexture2D::31294077729705256::1697939458::1697939458::1::::<><>::
+::res://Textures/Tower/::1697939458
+TORRE AZUL ATKSPD.png::CompressedTexture2D::314308634821512529::1697939458::1697939458::1::::<><>::
+TORRE LARANJA QTD.png::CompressedTexture2D::142038836801475510::1697939458::1697939458::1::::<><>::
+TORRE ROSA HP.png::CompressedTexture2D::2997691318821764002::1697939458::1697939458::1::::<><>::
+TORRE ROXA DANO.png::CompressedTexture2D::2791450780457717415::1697939458::1697939458::1::::<><>::
+TORRE VERDE MOVSPD.png::CompressedTexture2D::4655263371672715696::1697939458::1697939458::1::::<><>::
+torre-Sheet.png::CompressedTexture2D::5969522471164678800::1697939458::1697939458::1::::<><>::
+::res://Textures/Win-Lose/::1697939458
+juliette-quebrada.png::CompressedTexture2D::6525449256336547265::1697939458::1697939458::1::::<><>::
+juliette.png::CompressedTexture2D::7799311045627960287::1697939458::1697939458::1::::<><>::
+::res://Tower/::1697939555
+torre.tscn::PackedScene::1076100753054828070::1697939555::0::1::::<><>::uid://bf1g10hkoikvv::::res://Textures/Tower/TORRE ROXA DANO.png
+::res://World/::1697939555
+creditos.tscn::PackedScene::306195933455177389::1697939555::0::1::::<><>::res://creditos.gd<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf
+derrota.tscn::PackedScene::380325807833386080::1697939555::0::1::::<><>::res://derrota.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf<>uid://cy78gwossb6r2::::res://Textures/Win-Lose/juliette-quebrada.png
+Inimigo1.gd::GDScript::-1::1697939555::0::1::::<>CharacterBody2D<>::
+Inimigo2.gd::GDScript::-1::1697939555::0::1::::<>CharacterBody2D<>::
+introTexto.gd::GDScript::-1::1697939555::0::1::::<>RichTextLabel<>::
+menu.gd::GDScript::-1::1697939555::0::1::::<>Control<>::
+menu.tscn::PackedScene::6496494531661374928::1697939555::0::1::::<><>::res://World/menu.gd<>uid://b7a1jqap8spv0::::res://Textures/Menu/Logo.png<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://bg8ruyh7e84sq::::res://Textures/Menu/button.png<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf<>uid://dyfv7rhs00qd2::::res://Textures/Menu/som - medio.png<>uid://deajgly246ajb::::res://Textures/Menu/som - sem.png
+music_control.tscn::PackedScene::3779959755200037352::1697939555::0::1::::<><>::res://World/music_ontrol.gd<>uid://0lb71mkjixm1::::res://Textures/Menu/KEYMAGEtheme3.mp3
+music_ontrol.gd::GDScript::-1::1697939555::0::1::::<>Node2D<>::
+theme-button.tres::Theme::4452207696898886837::1697939555::0::1::::<><>::res://World/D:DocumentsGameRexGameRex2023TexturesPrStart.ttf
+tutorial.gd::GDScript::-1::1697939555::0::1::::<>Control<>::
+tutorial.tscn::PackedScene::1943992263870281035::1697939555::0::1::::<><>::res://World/tutorial.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png<>res://World/introTexto.gd<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://bg8ruyh7e84sq::::res://Textures/Menu/button.png
+vitoria.gd::GDScript::-1::1697939458::0::1::::<>Control<>::
+vitoria.tscn::PackedScene::7124632205049726924::1697939555::0::1::::<><>::res://World/vitoria.gd<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://dtolfqs65olce::::res://Textures/Menu/Fundo1.PNG<>uid://djebrpr1f1vv8::::res://Textures/Win-Lose/juliette.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png<>uid://bo3kh61b5mhq::::res://Textures/Menu/prstartk.ttf
+world.gd::GDScript::-1::1697939458::0::1::::<>Node2D<>::
+world.tscn::PackedScene::7991536076175343120::1697939555::0::1::::<><>::res://World/world.gd<>uid://cv8wmdhduydte::::res://Textures/chao1.png<>uid://b7i7knxbcx4qc::::res://Textures/chao2.png<>uid://bhakehydpe6h3::::res://Player/maguinho_bolado.tscn<>uid://bt7yt87oyl0lf::::res://Textures/delimitadores.png<>uid://pljhs3wrimv3::::res://Tower/torre.tscn<>res://World/Inimigo2.gd<>res://World/Inimigo1.gd<>uid://m72hgo3vcqyf::::res://Textures/Enemy/Inimigo2.png<>uid://b2duqqtxxtt1a::::res://Textures/Enemy/Inimito1.png<>uid://c637ql88lh2fe::::res://Textures/Enemy/Animacao-morte.png<>uid://vplfj4bvphk4::::res://Textures/Menu/sair.png<>uid://jnktsu4wyu8j::::res://Textures/Menu/sair-pressed.png
