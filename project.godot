@@ -11,10 +11,14 @@ config_version=5
 [application]
 
 config/name="GameRex"
-run/main_scene="res://World/world.tscn"
+run/main_scene="res://World/menu.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 boot_splash/bg_color=Color(0.160784, 0.0862745, 0.298039, 1)
 config/icon="res://Textures/GUI/icone.svg"
+
+[autoload]
+
+MusicControl="*res://World/music_control.tscn"
 
 [display]
 
