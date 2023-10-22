@@ -88,7 +88,7 @@ func _on_hurt_box_hurt(damage):
 
 func death():
 #	deathPanel.visible = true
-	emit_signal("playerdeath")
+	#emit_signal("playerdeath")
 	get_tree().paused = true
 	get_tree().change_scene_to_file("res://World/derrota.tscn")
 
@@ -114,7 +114,8 @@ func _on_fire_ball_aa_timer_timeout():
 #	if fireball_ammo > 0:
 	var fireball_attack = fireball.instantiate()
 	fireball_attack.position = position
-	fireball_attack.target = get_random_target()
+	#fireball_attack.target = get_random_target()
+	fireball_attack.target = get_global_mouse_position()
 	fireball_attack.level = fireball_level
 	add_child(fireball_attack)
 	fireball_ammo -= 1
