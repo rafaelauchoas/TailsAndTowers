@@ -1,109 +1,66 @@
-[gd_scene load_steps=10 format=3 uid="uid://bhakehydpe6h3"]
+[gd_scene load_steps=8 format=3 uid="uid://bhakehydpe6h3"]
 
 [ext_resource type="Script" path="res://Player/maguinho_bolado.gd" id="1_05ckr"]
 [ext_resource type="Texture2D" uid="uid://pfn5w64tk3a" path="res://Textures/Player/sprite sheet.png" id="2_0ko1l"]
-[ext_resource type="Material" uid="uid://s33f2ox06e0x" path="res://Player/maguinho_bolado.tres" id="2_bw2eu"]
-[ext_resource type="PackedScene" uid="uid://wofrb3rnuw3q" path="res://Utility/hurt_box.tscn" id="3_saebm"]
-[ext_resource type="Texture2D" uid="uid://djb0vm5uxenir" path="res://Textures/barra de vida - externo.png" id="5_smo2w"]
-[ext_resource type="Texture2D" uid="uid://fsbtb71mxchi" path="res://Textures/barra de vida - interno.png" id="6_5kld5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v5tg"]
+atlas = ExtResource("2_0ko1l")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rrbft"]
+atlas = ExtResource("2_0ko1l")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqpl5"]
+atlas = ExtResource("2_0ko1l")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4mik4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v5tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rrbft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v5tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqpl5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g0ujo"]
 radius = 7.0
-height = 22.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gx7hm"]
-size = Vector2(18, 23.5)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_jq36q"]
-radius = 258.095
+height = 24.0
 
 [node name="MaguinhoBolado" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
 script = ExtResource("1_05ckr")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(0, 1)
+sprite_frames = SubResource("SpriteFrames_4mik4")
+animation = &"walk"
+autoplay = "walk"
+frame = 1
+frame_progress = 0.448913
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-material = ExtResource("2_bw2eu")
 texture = ExtResource("2_0ko1l")
 hframes = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0, 4)
+position = Vector2(0, 5)
 shape = SubResource("CapsuleShape2D_g0ujo")
 
 [node name="walkTimer" type="Timer" parent="."]
 unique_name_in_owner = true
 wait_time = 0.2
 one_shot = true
-
-[node name="HurtBox" parent="." instance=ExtResource("3_saebm")]
-visible = false
-collision_layer = 2
-collision_mask = 2
-
-[node name="CollisionShape2D" parent="HurtBox" index="0"]
-position = Vector2(0, 4.25)
-shape = SubResource("RectangleShape2D_gx7hm")
-debug_color = Color(0.976471, 0.0980392, 0.294118, 0.419608)
-
-[node name="Attack" type="Node2D" parent="."]
-
-[node name="FireBallTimer" type="Timer" parent="Attack"]
-unique_name_in_owner = true
-wait_time = 3.0
-
-[node name="FireBallAATimer" type="Timer" parent="Attack/FireBallTimer"]
-unique_name_in_owner = true
-wait_time = 0.075
-
-[node name="EnemyDetectionArea" type="Area2D" parent="."]
-visible = false
-collision_layer = 20
-collision_mask = 20
-monitorable = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyDetectionArea"]
-visible = false
-shape = SubResource("CircleShape2D_jq36q")
-
-[node name="GUILayer" type="CanvasLayer" parent="."]
-
-[node name="GUI" type="Control" parent="GUILayer"]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -248.0
-offset_top = -149.0
-offset_right = 392.0
-offset_bottom = 211.0
-
-[node name="Timer" type="Label" parent="GUILayer/GUI"]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 525.0
-offset_top = 150.0
-offset_right = 605.0
-offset_bottom = 181.0
-theme_override_font_sizes/font_size = 20
-text = "00:00"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="HealthBar" type="TextureProgressBar" parent="GUILayer/GUI"]
-unique_name_in_owner = true
-self_modulate = Color(1, 1, 1, 0.392157)
-layout_mode = 0
-offset_left = 550.0
-offset_top = 350.0
-offset_right = 582.0
-offset_bottom = 358.0
-value = 50.0
-texture_over = ExtResource("5_smo2w")
-texture_progress = ExtResource("6_5kld5")
-
-[connection signal="hurt" from="HurtBox" to="." method="_on_hurt_box_hurt"]
-[connection signal="timeout" from="Attack/FireBallTimer" to="." method="_on_fire_ball_timer_timeout"]
-[connection signal="timeout" from="Attack/FireBallTimer/FireBallAATimer" to="." method="_on_fire_ball_aa_timer_timeout"]
-[connection signal="body_entered" from="EnemyDetectionArea" to="." method="_on_enemy_detection_area_body_entered"]
-[connection signal="body_exited" from="EnemyDetectionArea" to="." method="_on_enemy_detection_area_body_exited"]
-
-[editable path="HurtBox"]
