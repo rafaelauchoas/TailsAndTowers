@@ -1,12 +1,10 @@
 [gd_scene load_steps=16 format=3 uid="uid://dl4fow6qbm44s"]
 
-
 [ext_resource type="Texture2D" uid="uid://cv8wmdhduydte" path="res://Textures/chao1.png" id="1_ku2st"]
 [ext_resource type="Texture2D" uid="uid://b7i7knxbcx4qc" path="res://Textures/chao2.png" id="2_2eqyb"]
 [ext_resource type="PackedScene" uid="uid://bhakehydpe6h3" path="res://Player/maguinho_bolado.tscn" id="2_hv76x"]
 [ext_resource type="Texture2D" uid="uid://bt7yt87oyl0lf" path="res://Textures/delimitadores.png" id="3_r2tv1"]
 [ext_resource type="PackedScene" uid="uid://pljhs3wrimv3" path="res://Tower/torre.tscn" id="4_7f3wk"]
-
 [ext_resource type="Script" path="res://Tower/torre.gd" id="6_ijp6u"]
 [ext_resource type="Texture2D" uid="uid://ca2mg42uyb15" path="res://Textures/Tower/TORRE LARANJA QTD.png" id="8_8oidh"]
 [ext_resource type="Texture2D" uid="uid://eqiu8ue12fnl" path="res://Textures/Tower/TORRE AZUL ATKSPD.png" id="9_hexj2"]
@@ -42,165 +40,6 @@ sources/0 = SubResource("TileSetAtlasSource_unbfb")
 sources/1 = SubResource("TileSetAtlasSource_nidae")
 sources/2 = SubResource("TileSetAtlasSource_kity2")
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rna7q"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_arfse"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(0, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a5j8f"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(48, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a7cun"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(0, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tidbl"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(96, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_no6mg"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(0, 48, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_usr5c"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(48, 48, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bhhic"]
-atlas = ExtResource("7_31ep4")
-region = Rect2(0, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_000px"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_andhs"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xln37"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_q5ldp"]
-animations = [{
-"frames": [{
-"duration": 0.5,
-"texture": SubResource("AtlasTexture_arfse")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a5j8f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a7cun")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tidbl")
-}],
-"loop": true,
-"name": &"andar",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_no6mg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_usr5c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bhhic")
-}],
-"loop": true,
-"name": &"atacar",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.5,
-"texture": SubResource("AtlasTexture_000px")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_andhs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xln37")
-}],
-"loop": true,
-"name": &"morrer",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cm12q"]
-atlas = ExtResource("7_h3y43")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ctbmi"]
-atlas = ExtResource("7_h3y43")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1nq5h"]
-atlas = ExtResource("7_h3y43")
-region = Rect2(32, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_115dj"]
-atlas = ExtResource("7_h3y43")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vpp8h"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gs7xv"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5h0ko"]
-atlas = ExtResource("7_khn4k")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_n4rlr"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cm12q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ctbmi")
-}],
-"loop": true,
-"name": &"andar",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1nq5h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_115dj")
-}],
-"loop": true,
-"name": &"atacar",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.5,
-"texture": SubResource("AtlasTexture_vpp8h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gs7xv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5h0ko")
-}],
-"loop": true,
-"name": &"morrer",
-"speed": 5.0
-}]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wffkq"]
-
 [node name="World" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -226,6 +65,63 @@ layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array()
 
+[node name="Enemy Spawner" parent="." instance=ExtResource("9_noa05")]
+
+[node name="MaguinhoBolado" parent="." instance=ExtResource("2_hv76x")]
+position = Vector2(72, 32)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="MaguinhoBolado"]
+remote_path = NodePath("../../Camera/Camera2D")
+
+[node name="TorreLaranjaQTD" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(467, 420)
+collision_layer = 2147483649
+collision_mask = 2147483649
+collision_priority = 32.0
+script = ExtResource("6_ijp6u")
+
+[node name="Sprite2D" parent="TorreLaranjaQTD" index="0"]
+position = Vector2(-1, -28)
+texture = ExtResource("8_8oidh")
+
+[node name="TorreAzulAtkSpd" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(-336, 400)
+collision_layer = 2147483649
+collision_mask = 2147483649
+collision_priority = 32.0
+script = ExtResource("6_ijp6u")
+
+[node name="Sprite2D" parent="TorreAzulAtkSpd" index="0"]
+texture = ExtResource("9_hexj2")
+
+[node name="TorreRosaHP" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(-340, -366)
+collision_layer = 2147483649
+collision_mask = 2147483649
+collision_priority = 32.0
+script = ExtResource("6_ijp6u")
+
+[node name="Sprite2D" parent="TorreRosaHP" index="0"]
+texture = ExtResource("10_4xaju")
+
+[node name="TorreRoxaDMG" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(72, 21)
+collision_layer = 2147483649
+collision_mask = 2147483649
+collision_priority = 32.0
+script = ExtResource("6_ijp6u")
+
+[node name="TorreVerdeMVSPD" parent="." groups=["torres"] instance=ExtResource("4_7f3wk")]
+position = Vector2(466, -342)
+collision_layer = 2147483649
+collision_mask = 2147483649
+collision_priority = 32.0
+script = ExtResource("6_ijp6u")
+
+[node name="Sprite2D" parent="TorreVerdeMVSPD" index="0"]
+position = Vector2(3, -28)
+texture = ExtResource("11_ndj02")
+
 [node name="Camera" type="Node" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="Camera"]
@@ -235,15 +131,6 @@ limit_top = -530
 limit_right = 680
 limit_bottom = 620
 editor_draw_limits = true
-
-[node name="sair" type="TextureButton" parent="Camera/Camera2D"]
-offset_left = -318.0
-offset_top = -177.0
-offset_right = -286.0
-offset_bottom = -145.0
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("12_mxh5b")
-texture_pressed = ExtResource("13_tftef")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Camera"]
 

@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 var movement_speed = 100.0
+var hp = 100
+var maxhp = 100
 var frame_aux = 0
 var time = 0
 
@@ -74,6 +76,7 @@ func movement():
 	
 	velocity = mov.normalized() * movement_speed # Sem isso, na diag ele corre mais rapido vrum vrum
 	move_and_slide()
+
 
 func _on_hurt_box_hurt(damage):
 	hp -= damage

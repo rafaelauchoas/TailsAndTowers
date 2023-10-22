@@ -1,11 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://foh57r34bje3"]
+[gd_scene load_steps=4 format=3 uid="uid://foh57r34bje3"]
 
 [ext_resource type="Script" path="res://derrota.gd" id="1_h6snd"]
 [ext_resource type="Texture2D" uid="uid://vplfj4bvphk4" path="res://Textures/Menu/sair.png" id="2_2658w"]
-[ext_resource type="Texture2D" uid="uid://dtolfqs65olce" path="res://Textures/Menu/Fundo1.PNG" id="2_cj6b2"]
 [ext_resource type="Texture2D" uid="uid://jnktsu4wyu8j" path="res://Textures/Menu/sair-pressed.png" id="3_eisq1"]
-[ext_resource type="FontFile" uid="uid://bo3kh61b5mhq" path="res://Textures/Menu/prstartk.ttf" id="3_r7sm4"]
-[ext_resource type="Texture2D" uid="uid://cy78gwossb6r2" path="res://Textures/Win-Lose/juliette-quebrada.png" id="6_1q23f"]
 
 [node name="derrota" type="Control"]
 layout_mode = 3
@@ -15,41 +12,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_h6snd")
-
-[node name="Fundo" type="TextureRect" parent="."]
-modulate = Color(0.160784, 0.0862745, 0.301961, 1)
-offset_right = 640.0
-offset_bottom = 360.0
-texture = ExtResource("2_cj6b2")
-expand_mode = 1
-
-[node name="Juliette2" type="Sprite2D" parent="."]
-position = Vector2(320, 176)
-scale = Vector2(1.10417, 1.16667)
-texture = ExtResource("6_1q23f")
-
-[node name="Parabens" type="Label" parent="."]
-offset_left = 192.0
-offset_top = 32.0
-offset_right = 448.0
-offset_bottom = 67.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_r7sm4")
-theme_override_font_sizes/font_size = 32
-text = "Derrota"
-horizontal_alignment = 1
-
-[node name="text" type="Label" parent="."]
-offset_left = 32.0
-offset_top = 256.0
-offset_right = 608.0
-offset_bottom = 337.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_r7sm4")
-theme_override_font_sizes/font_size = 24
-text = "O mago não era
-tão implacável..."
-horizontal_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
