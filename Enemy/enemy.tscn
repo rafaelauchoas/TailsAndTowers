@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://er0xygu5whd1"]
+
+[ext_resource type="Script" path="res://Enemy/enemy.gd" id="1_ysjty"]
+[ext_resource type="Texture2D" uid="uid://b2duqqtxxtt1a" path="res://Textures/Enemy/Inimito1.png" id="2_uy5ec"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqb88"]
+atlas = ExtResource("2_uy5ec")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cok1h"]
+atlas = ExtResource("2_uy5ec")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lnyal"]
+atlas = ExtResource("2_uy5ec")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0s5c5"]
+atlas = ExtResource("2_uy5ec")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pck65"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqb88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cok1h")
+}],
+"loop": true,
+"name": &"andar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lnyal")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0s5c5")
+}],
+"loop": true,
+"name": &"atacar",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cf8ho"]
+radius = 6.0
+height = 18.0
+
+[node name="Inimigo1" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_ysjty")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 3)
+scale = Vector2(0.59375, 0.5625)
+sprite_frames = SubResource("SpriteFrames_pck65")
+animation = &"andar"
+frame = 1
+frame_progress = 0.114694
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 3)
+shape = SubResource("CapsuleShape2D_cf8ho")
