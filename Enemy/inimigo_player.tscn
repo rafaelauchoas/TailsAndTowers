@@ -109,6 +109,7 @@ position = Vector2(-1.5, -0.5)
 shape = SubResource("RectangleShape2D_5onpn")
 
 [node name="HitBox" parent="." instance=ExtResource("5_ispjb")]
+scale = Vector2(1.32, 1.28)
 collision_layer = 2
 collision_mask = 2
 
@@ -117,6 +118,7 @@ position = Vector2(-2, 2)
 shape = SubResource("RectangleShape2D_2g7la")
 
 [connection signal="hurt" from="HurtBox" to="." method="_on_hurt_box_hurt"]
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
 
 [editable path="HurtBox"]
 [editable path="HitBox"]

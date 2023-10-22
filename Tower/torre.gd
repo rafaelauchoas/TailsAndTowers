@@ -1,11 +1,27 @@
 extends StaticBody2D
 
+var hp = 10
+var maxhp = 10
+var death = 0
+@onready var sprite = $Sprite2D
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	_on_hurt_box_hurt(0)
 
+func _on_hurt_box_hurt(damage):
+	hp -= damage
+	if hp <=5 and hp > 0:
+		broke()
+	if hp <= 0:
+		deadtower()
+		
+func getdeath():
+	return death
+		
+func broke():
+	sprite.frame(1)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func deadtower():
+	sprite.frame(2)
+	death = 1
+

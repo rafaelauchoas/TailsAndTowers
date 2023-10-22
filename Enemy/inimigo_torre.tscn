@@ -134,6 +134,7 @@ position = Vector2(0.5, 1.5)
 shape = SubResource("RectangleShape2D_fjlo4")
 
 [connection signal="hurt" from="HurtBox" to="." method="_on_hurt_box_hurt"]
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
 
 [editable path="HurtBox"]
 [editable path="HitBox"]
